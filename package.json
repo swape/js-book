@@ -8,5 +8,8 @@
     "build": "vuepress build"
   },
   "author": "Alireza Balouch",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  }
 }
