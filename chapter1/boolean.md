@@ -80,20 +80,28 @@ But it is important to know what can produce true or false values.
 
 Remember that you are reading the code a lot more than you writing it so it is really important to be clear and keep the code as simple as we can.
 
-::: Falsy values
+::: tip Falsy values:
 **false** (The keyword false)
+
 **0** (The number zero)
+
 **0n** (BigInt, when used as a boolean, follows the same rule as a Number. 0n is *falsy*.)
+
 "", '', ``
 (This is an empty string (the length of the string is zero). Strings in JavaScript can be defined with double quotes "", single quotes '', or Template literals ``.
 )
+
 **null**  (the absence of any value)
+
 **undefined** (the primitive value)
+
 **NaN** (not a number)
+
 :::
 
-::: Nullish values
+::: warning Nullish values:
 **null**
+
 **undefined**
 :::
 
