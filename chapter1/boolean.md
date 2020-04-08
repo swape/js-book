@@ -9,7 +9,7 @@ let isAdmin = true
 let isPoor = false
 
 if (isAdmin) {
-    // some secret code to excecute here
+    // some secret code to execute here
 }
 
 if (isPoor) {
@@ -26,7 +26,7 @@ let y = 5
 let answer = (x >= y) // if x is equal or bigger than y
 
 if (answer) {
-    cosnole.log('Correct answer')
+    console.log('Correct answer')
 }
 ```
 
@@ -42,7 +42,7 @@ let y = 5
 let answer = (x >= y) // if x is equal or bigger than y
 
 if (!answer) {
-    cosnole.log('Wrong answer')
+    console.log('Wrong answer')
 }
 ```
 
@@ -76,8 +76,25 @@ let h = !true // false
 let i = "false" // true
 ```
 
-But let us just use `true` or `false` and not confuse our heads with these values.
-
 But it is important to know what can produce true or false values.
 
 Remember that you are reading the code a lot more than you writing it so it is really important to be clear and keep the code as simple as we can.
+
+::: Falsy values
+**false** (The keyword false)
+**0** (The number zero)
+**0n** (BigInt, when used as a boolean, follows the same rule as a Number. 0n is *falsy*.)
+"", '', ``
+(This is an empty string (the length of the string is zero). Strings in JavaScript can be defined with double quotes "", single quotes '', or Template literals ``.
+)
+**null**  (the absence of any value)
+**undefined** (the primitive value)
+**NaN** (not a number)
+:::
+
+::: Nullish values
+**null**
+**undefined**
+:::
+
+**undefined** is not valid in JSON files while **null** is ok.
