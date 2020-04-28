@@ -40,7 +40,8 @@ module.exports = {
           "/chapter2/arrayLoops.md",
           "/chapter2/templateLiterals.md",
           "/chapter2/spreadOperator.md",
-          "/chapter2/set.md"
+          "/chapter2/set.md",
+          "/chapter2/map.md"
         ]
       }
     ]
