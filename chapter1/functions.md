@@ -9,7 +9,7 @@ function myFunc() {
 }
 ```
 
-This function doesn't do anything special. It just return the text **hello**. The `return` keyword should be the last thing in a function scope.  
+This function doesn't do anything special. It just return the text **hello**. The `return` keyword should be the last thing in a function scope.
 
 `myFunc` is the name of the function. After the name, there is `()`. This is where all the parameters (arguments) go. And the rest of the functions content go between `{` and `}`.
 We can call the function to get the result back.
@@ -42,7 +42,7 @@ function myFunc(myName, myGreetings) {
   return myGreetings + ' ' + myName
 }
 
-console.log(myFunc('John' , 'Greetings'))
+console.log(myFunc('John', 'Greetings'))
 ```
 
 This should log Greetings John in console.
@@ -54,7 +54,7 @@ Functions can access variables outside the scope but variables declared inside t
 ```javascript
 let myName = 'John'
 
-function greet(){
+function greet() {
   return 'Hello ' + myName
 }
 
@@ -64,9 +64,9 @@ myName = 'Rob'
 console.log(greet())
 ```
 
-This should first log Hello John and then when we call the greet again on line 10, it is changed to Hello Rob.
+This should first log Hello John and then when we call `greet` again on line 10, it is changed to Hello Rob.
 
-This is not the best practice. We should try to avoid getting variables from outside the function scope unless we pass that as argument. This function is *un-pure*. To make this function *pure*, we have to make a function argument to pass the value.
+This is not the best practice. We should try to avoid getting variables from outside the function scope unless we pass that as argument. This function is _un-pure_. To make this function _pure_, we have to make a function argument to pass the value.
 
 ```javascript
 let myName = 'John'
@@ -81,7 +81,7 @@ myName = 'Rob'
 console.log(greet(myName))
 ```
 
-This is better. When we write JavaScript we can encounter some codes that run in the background (async) and then we never know if the variable myName is changed or not in the time we need that. So to avoid future errors and endless hours of debugging, try not to access variables outside the function scope unless it have come from argument list.
+This is better. When we write JavaScript we can encounter some codes that run in the background (async) and then we never know if the variable myName is changed or not in the time we need that. So to avoid future errors and endless hours of debugging, try not to access variables outside the function scope unless it has come from argument list.
 
 Let us make a function that does the addition with parseInt built in.
 
@@ -109,7 +109,7 @@ myFunc()
 This is an anonymous function. We assign that to `myFuncvariable`.
 It is anonymous because we don't specify a name for that function and after the keyword function we start the () without the name.
 
-You have to be careful with these kind of function declaration. If you define the function like this after you call them, you get an error. But normal functions can be declared after you call them.
+You have to be careful with this kind of function declaration. If you define the function like this after you call them, you get an error. But normal functions can be declared after you call them.
 
 Let us try that.
 

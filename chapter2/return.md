@@ -1,6 +1,6 @@
 # Return
 
-If you are coming from other languages (c/java/php) you are used to have the curly brackets on its own line.
+If you are coming from other languages (c/java/php), you are used to the curly brackets on its own line.
 This is something you should avoid in JavaScript.
 
 ```javascript

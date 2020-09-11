@@ -35,7 +35,7 @@ Let us try them all to see how they show up in our console.
 let firstVar = 10
 let anotherNumber = 5
 
-console.info('My numbers are' , firstVar, 'and', anotherNumber)
+console.info('My numbers are', firstVar, 'and', anotherNumber)
 console.log('I am some text')
 console.warn('This can be some error message')
 ```
@@ -44,10 +44,10 @@ We can re-use variables. But we only need to use the keyword `let` the first tim
 
 ```javascript
 let firstVar = 10
-console.log('number is ' , firstVar)
+console.log('number is ', firstVar)
 
 firstVar = 3
-console.log('number is changed to' , firstVar)
+console.log('number is changed to', firstVar)
 ```
 
 ## var

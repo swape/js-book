@@ -24,7 +24,7 @@ Using a comments on the parts that are complicated is a good practice. I have TO
 let x = 10 // my x
 let y = 15 // but y
 let text = 'my secret number is: '
-text = text + (x+y)
+text = text + (x + y)
 // TODO: clean up this part later
 
 // output to console

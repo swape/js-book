@@ -8,9 +8,9 @@ Think of objects as a collection of values and functions with unique names/keys.
 let myObj = {} // Empty object
 
 let myObj2 = {
-    name: 'Bob',
-    age: 20,
-    level: 8
+  name: 'Bob',
+  age: 20,
+  level: 8,
 }
 
 console.log(myObj2.name) // This outputs 'Bob'
@@ -27,10 +27,10 @@ You can also use functions inside an object.
 
 ```javascript
 let myObj = {
-    name: 'KVN',
-    sayHi() {
-        console.log('Hi there')
-    }
+  name: 'KVN',
+  sayHi() {
+    console.log('Hi there')
+  },
 }
 
 myObj.sayHi() // Outputs 'Hi there'
@@ -44,10 +44,10 @@ The keyword this is very useful but mostly misused keyword that makes a lot of i
 
 ```javascript
 let myObj = {
-    name: 'KVN',
-    sayHi() {
-        console.log('Hi there ' + this.name)
-    }
+  name: 'KVN',
+  sayHi() {
+    console.log('Hi there ' + this.name)
+  },
 }
 
 myObj.sayHi() // Outputs 'Hi there KVN'
@@ -90,7 +90,7 @@ You can also use space or other signs as a key but you have to use quote sign `'
 
 ```javascript
 let myObj = {
-    'something here': 'my value'
+  'something here': 'my value',
 }
 
 // Getting the value from a key with space
@@ -108,7 +108,7 @@ Unlike the normal variables, you can not copy objects by using a `=` sign. This 
 
 ```javascript
 let objA = {
-    name: 'Jack'
+  name: 'Jack',
 }
 
 let objB = objA

@@ -1,7 +1,5 @@
 {
   "version": 2,
   "name": "js-book",
-  "builds": [
-    { "src": "package.json", "use": "@now/static-build" }
-  ]
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
 }

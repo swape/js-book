@@ -20,7 +20,7 @@ You can also use normal javascript inside that too.
 
 ```javascript
 const someName = 'John'
-console.log(`I'm ${someName} and my number is ${ 2 + 40 }`)
+console.log(`I'm ${someName} and my number is ${2 + 40}`)
 // I'm John and my number is 42
 
 const x = `Some numbers ${[1, 2, 3, 4, 5].map(i => i + 2)}`
@@ -37,7 +37,7 @@ function highlight(strings, ...values) {
     if (values[i]) {
       str += '(' + values[i] + ')'
     }
-  });
+  })
   return str + ' -The end-'
 }
 

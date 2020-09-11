@@ -1,16 +1,16 @@
 # Function Parameters
 
-When we make functions we can pass some parameters.
+When we make functions, we can pass some parameters.
 But we can also set the default values so if the parameters are not given, it uses the default values.
 
 ```javascript
-const myFn = (a = 1, b = 2) =>  console.log(a, b)
+const myFn = (a = 1, b = 2) => console.log(a, b)
 
 myFn(3) // 3, 2
 
 myFn() // 1, 2
 
-myFn(4,5) // 4, 5
+myFn(4, 5) // 4, 5
 ```
 
 On the first line we have an arrow function that have `a` and `b` as parameters.
@@ -26,20 +26,19 @@ If we don't give it a default value it returns `"undefined"` as value for that p
 If you get confused on the arrow function, here is the same function in other forms.
 
 ```javascript
-const myFn = function (a = 1, b = 2 ) {
+const myFn = function(a = 1, b = 2) {
   return console.log(a, b)
 }
 
 // or
 
-function myFn(a = 1, b = 2 ) {
+function myFn(a = 1, b = 2) {
   return console.log(a, b)
 }
 
 // or
 
-const myFn = (a = 1, b = 2) =>  console.log(a, b)
-
+const myFn = (a = 1, b = 2) => console.log(a, b)
 ```
 
 All 3 ways of declaring `myFn` is the same.

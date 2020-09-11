@@ -6,7 +6,7 @@ There are many ways in JavaScript we could do that, but here is the most common 
 ## For loop
 
 ```javascript
-for (let x = 0; x < 10; x++){
+for (let x = 0; x < 10; x++) {
   console.log(x)
 }
 ```
@@ -23,7 +23,7 @@ And in the last one we have to tell it to increase the `x` for each time it loop
 This should print out 0 to 9.
 
 ```javascript
-for (let x = 9; x >= 0; x--){
+for (let x = 9; x >= 0; x--) {
   console.log(x)
 }
 ```
@@ -37,7 +37,7 @@ There is another way to use the for loop.
 ```javascript
 const myArr = [5, 10, 15, 20]
 
-for (v of myArr){
+for (v of myArr) {
   console.log(v) // 5, 10, 15, 20
 }
 ```
@@ -104,7 +104,7 @@ for (let x = 9; x >= 0; x--) {
 ```
 
 `continue` keyword breaks the loop but it doesn't stop it like the break does.
-It just continue and skip the rest of the code that comes after the continue.
+It just continue and skip the rest of the code that comes after the `continue`.
 
 This script skips the nr 5 and continue to next iteration.
 

@@ -9,7 +9,7 @@ let myArr = [] // empty array
 
 let myArr2 = [1, 5, 8, 2, 5, 2, 4, 3, 1] // array of numbers
 
-let myArr3 = ['a', 'b', 'c', 'z' ,'foo'] // array of strings
+let myArr3 = ['a', 'b', 'c', 'z', 'foo'] // array of strings
 
 let myArr = [1, 0, 'x', 19, 'f', '22', 'some other stuff'] // array of mixed values
 ```
@@ -34,7 +34,7 @@ This should output the values: [ 1, 10, 11, 13, 6 ].
 
 We use the array method called push to push new values to the end of the array.
 
-We can now get the values one by one by using the index position of that value.
+We can now get the values one by one, by using the index position of that value.
 
 ```javascript
 let myArr = ['one', 2, 3, 'four']
@@ -44,7 +44,7 @@ console.log(myArr[2]) // this outputs 3
 console.log(myArr[3]) // this outputs 'four'
 ```
 
-Array indexes starts with 0. So if we want to get the first value we have to use index position 0 to get that value.
+Array indexes starts with 0. So if we want to get the first value, we have to use index position 0 to get that value.
 
 ## IndexOf
 
@@ -74,11 +74,11 @@ Let us combine the if statement and arrays.
 let myArr = []
 
 function isItEnough(inputArr) {
-    let returnValue = 'No'
-    if(inputArr && inputArr.length >= 3) {
-        returnValue = 'Yes we have 3 or more values'
-    }
-    return returnValue
+  let returnValue = 'No'
+  if (inputArr && inputArr.length >= 3) {
+    returnValue = 'Yes we have 3 or more values'
+  }
+  return returnValue
 }
 
 console.log(isItEnough(myArr)) // this outputs 'No'
@@ -93,6 +93,6 @@ myArr.push('y')
 console.log(isItEnough(myArr)) // this outputs 'Yes we have 3 or more values'
 ```
 
-As you can see in the code above, we declare and array on line 1. Then we made a function `isItEnough` and passed the array as input to check if we have  3 or more values. If you look at the line 5 in the if statement expression, we use `&&`. That means AND. So first we check if we have some value in `inputArr` and then by using the AND operator we ask if it also have the length of 3 or more. If we don't have any value for `inputArr`, the rest of the checks inside the if statement expression is not called and we jump right out of the if scope.
+As you can see in the code above, we declare and array on line 1. Then we made a function `isItEnough` and passed the array as input to check if we have 3 or more values. If you look at the line 5 in the if statement expression, we use `&&`. That means AND. So first we check if we have some value in `inputArr` and then by using the AND operator we ask if it also has the length of 3 or more. If we don't have any value for `inputArr`, the rest of the checks inside the if statement expression is not called and we jump right out of the if scope.
 
 Array have a lot more methods like `push` and properties. But let us not go too fast. I'm going to explain more about them in combination of other parts in this book later on.

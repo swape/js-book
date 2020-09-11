@@ -15,7 +15,7 @@ This is also called **Function Statement**
 
 ```javascript
 function myFunc() {
-    return 'some value'
+  return 'some value'
 }
 ```
 
@@ -27,7 +27,7 @@ This is also called **Function Literal**
 
 ```javascript
 const myFunc = function optionalName() {
-    return 'some value'
+  return 'some value'
 }
 ```
 
@@ -35,8 +35,8 @@ A function expression have to be declared first before you can call them.
 These can be without a name like the example bellow. These are called anonymous function expression.
 
 ```javascript
-const myFunc = function () {
-    return 'some value'
+const myFunc = function() {
+  return 'some value'
 }
 ```
 
@@ -46,11 +46,11 @@ Arrow functions are a part of the "new" ES6 JavaScript.
 
 ```javascript
 const myFunc = () => {
-    return 'some value'
+  return 'some value'
 }
 
-const myFunc2 = ( name, age ) => {
-    return 'My name is ' + name + ' and my age is ' + age
+const myFunc2 = (name, age) => {
+  return 'My name is ' + name + ' and my age is ' + age
 }
 ```
 
@@ -59,13 +59,13 @@ These are the same as the anonymous function expression but instead of having a 
 But if you are going to only return just some value back you can skip the `{ }` curly brackets and the return keyword.
 
 ```javascript
-const myFunc2 = ( name, age ) => {
-    return 'My name is ' + name + ' and my age is ' + age
+const myFunc2 = (name, age) => {
+  return 'My name is ' + name + ' and my age is ' + age
 }
 
 // is the same as
 
-const myFunc2 = ( name, age ) => 'My name is ' + name + ' and my age is ' + age
+const myFunc2 = (name, age) => 'My name is ' + name + ' and my age is ' + age
 ```
 
 There are some differences between these 3 way of declaring the functions.

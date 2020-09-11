@@ -16,7 +16,7 @@ console.log(mySet)
 // Set { { name: 'John' }, { name: 'Eli' }, { name: 'Jack' }, { name: 'John' }}
 ```
 
-We can add new values to our set by using `add()` method, it also return the set with all the values.
+We can add new values to our set by using `add()` method, it also returns the set with all the values.
 
 ```javascript
 const myArray = [9, 0, 1, 2, 3, 4, 5, 4, 3, 2]
@@ -28,7 +28,7 @@ console.log(mySet)
 
 As you can see from example above, we can use set to remove duplicated values from an array list.
 
-*Note that this is not the same for objects*
+_Note that this is not the same for objects_
 
 If you add objects as values, it is not removed if it is duplicated unless it is exactly the same object.
 You can see this in `has()` example.
@@ -64,14 +64,14 @@ console.log(mySet.has({ name: 'Eli' })) // false
 console.log(mySet.has(myObject)) // true
 ```
 
-We can use `has()` method to check if that value exsists. But as you can see from this example on line 5 that we add the object `myObject` that looks like what we are trying to check on line 8.
+We can use `has()` method to check if that value exists. But as you can see from this example on line 5 that we add the object `myObject` that looks like what we are trying to check on line 8.
 But these are not the same value although they look the same.
 
 On line 9 you can see that it returns true because we have the exact object we added on line 3.
 
 ## size
 
-You can check the size of the set with `size`. *note this is not a method*
+You can check the size of the set with `size`. _note this is not a method_
 
 ```javascript
 let mySet = new Set()
@@ -84,7 +84,6 @@ mySet.add(5)
 console.log(mySet) // Set { 5, 3, 2 }
 
 console.log(mySet.size) // 3
-
 ```
 
 ## clear()
@@ -111,7 +110,7 @@ mySet.add({ name: 'Eli' })
 mySet.add({ name: 'Jack' })
 mySet.add({ name: 'John' })
 
-for(let friend of mySet){
+for (let friend of mySet) {
   console.log(friend.name)
 }
 ```
