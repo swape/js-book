@@ -11,7 +11,7 @@
   "author": "Alireza Balouch",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.5.3"
+    "vuepress": "^1.5.4"
   },
   "dependencies": {}
 }
