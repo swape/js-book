@@ -1,15 +1,16 @@
 {
   "name": "js-book",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Another JavaScript book explained by Alireza Balouch",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
   },
   "author": "Alireza Balouch",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.8.2"
+    "vitepress": "^0.20.0"
   }
 }
