@@ -1,7 +1,7 @@
 # Functions
 
 We have already started to use functions like console.log and parseInt. But what is a function?
-Think of it as a set of instructions grouped together and named something. There are many built in functions in JavaScript but let us make our own function.
+Think of it as a set of instructions grouped together and named something. There are many built-in functions in JavaScript but let us make our own function.
 
 ```javascript
 function myFunc() {
@@ -9,7 +9,7 @@ function myFunc() {
 }
 ```
 
-This function doesn't do anything special. It just return the text **hello**. The `return` keyword should be the last thing in a function scope.
+This function doesn't do anything special. It just returns the text **hello**. The `return` keyword should be the last thing in a function scope.
 
 `myFunc` is the name of the function. After the name, there is `()`. This is where all the parameters (arguments) go. And the rest of the functions content go between `{` and `}`.
 We can call the function to get the result back.
@@ -47,7 +47,7 @@ console.log(myFunc('John', 'Greetings'))
 
 This should log Greetings John in console.
 If you don't pass the second argument "Greetings" at all, you should get undefined John.
-This happens when JavaScript can not find that value. Instead it is setting the keyword `undefined` for that variable.
+This happens when JavaScript can not find that value. Instead, it is setting the keyword `undefined` for that variable.
 
 Functions can access variables outside the scope but variables declared inside the function is only accessible within that function. Let us try one.
 
@@ -93,7 +93,7 @@ function add(a, b) {
 console.log(add('1', 8))
 ```
 
-Now we can send text or number to our add function and it converts them to number and return the sum back.
+Now we can send text or number to our add function, and it converts them to number and return the sum back.
 
 You can assign functions to variable.
 
@@ -138,4 +138,4 @@ let myFunc = function() {
 This is because JavaScript put every function at top of the script and after that variables, right before it runs the script.
 And when we declare the variable and assign a function to it, it is not being declared when we call the function.
 
-There are more ways to declaring a function but we can come back to it later.
+There are more ways to declaring a function, but we can come back to it later.

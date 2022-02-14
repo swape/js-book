@@ -2,7 +2,7 @@
 
 1 + 1
 
-Yes it is time to do one plus one. JavaScript do not have a strong typing like many other languages. It is dynamic and it tries to do the best it can to convert strings to numbers and other way around.
+Yes it is time to do one plus one. JavaScript do not have a strong typing like many other languages. It is dynamic, and it tries to do the best it can to convert string to number and other way around.
 
 ```javascript
 let number1 = 5
@@ -35,7 +35,7 @@ console.log(a + b)
 
 This is outputting 17. JavaScript have converted `a` to a string and this is same if it was `'1' + '7'`.
 
-This is really bad. This is where a lot of programmers use endless ours trying to figure out what and where the issue is.
+This is awful. This is where a lot of programmers use endless ours trying to figure out what and where the issue is.
 
 But don't worry we have solution for that.
 
@@ -49,7 +49,7 @@ console.log(parseInt(myNumber) + parseInt(someText))
 Notice the `parseInt` function. This function converts the input to number.
 If you know that you are going to do the mathematical operation on some variables, make sure you convert them to numbers before you do the operation. This saves you a lot of trouble.
 
-Never trust the data. Let us do some more but this time we do that in a another way that is more clear and more readable.
+Never trust the data. Let us do some more but this time we do that in a way that is more clear and more readable.
 
 ```javascript
 let myNumber = 33

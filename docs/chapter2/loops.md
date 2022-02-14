@@ -11,7 +11,7 @@ for (let x = 0; x < 10; x++) {
 }
 ```
 
-Here you can see that inside the for parentheses `( )` we have 3 sections separated by semi-colon `;`.
+Here you can see that inside the for parentheses `( )` we have 3 sections separated by semicolon `;`.
 
 The first one is `let x = 0`.
 This is the start point. We tell the for loop to start from `0`.
@@ -28,7 +28,7 @@ for (let x = 9; x >= 0; x--) {
 }
 ```
 
-In this example we tell the loop to count from `9` down to `0` and **decrease** it by one each time.
+In this example we tell the loop to count from `9` down to `0` and **decrease** it with one each time.
 
 ## For of
 
@@ -59,8 +59,8 @@ while (n < 3) {
 
 Here we tell the `while` loop to repeat as long as `n` is less than 3.
 And inside the `while` loop we increase the `n` by one and print it out.
-But be careful. This can cause some issues when we increase the `n` inside some other if statements or something and it never gets bigger than 3.
-Then you get infinite loop where it never stops and the rest of the script freeze and your CPU overheat and we all die. Not that bad :), but it feels like it though.
+But be careful. This can cause some issues when we increase the `n` inside some other if statements or something, and it never gets bigger than 3.
+Then you get infinite loop where it never stops and the rest of the script freeze and your CPU overheat, and we all die. Not that bad :), but it feels like it though.
 
 ## Break
 
@@ -79,7 +79,7 @@ while (n < 5) {
 ```
 
 Here you can see that on line 5 we have an if statement that breaks the loop if `n` is 3.
-So it never gets to line 8 and we only get to print out 1 and 2.
+So it never gets to line 8, and we only get to print out 1 and 2.
 
 ```javascript
 for (let x = 9; x >= 0; x--) {
@@ -103,8 +103,8 @@ for (let x = 9; x >= 0; x--) {
 }
 ```
 
-`continue` keyword breaks the loop but it doesn't stop it like the break does.
-It just continue and skip the rest of the code that comes after the `continue`.
+`continue` keyword breaks the loop, but it doesn't stop it like the break does.
+It just continues and skip the rest of the code that comes after the `continue`.
 
 This script skips the nr 5 and continue to next iteration.
 

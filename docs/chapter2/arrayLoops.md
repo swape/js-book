@@ -56,7 +56,7 @@ const newArr = myArr.filter(i => {
 })
 ```
 
-`filter` is returning new array that is filtered through the callback function. On line 4 it returns a boolean value (true or false) based on if i is bigger than 5. So in here we should get a new array with [ 8, 9, 11, 6 ].
+`filter` is returning new array that is filtered through the callback function. On line 4 it returns a boolean value (true or false) based on if it is bigger than 5. So in here we should get a new array with [ 8, 9, 11, 6 ].
 
 There are more array methods that can loop through the all the items, but This should be enough to get most of the jobs done.
 

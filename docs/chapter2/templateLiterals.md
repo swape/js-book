@@ -54,5 +54,5 @@ You can see the 3 dots before the values variable. This is spread operator.
 That means it can be one or more arguments that is passed in. We can get back to this later on.
 Both strings and values is now a list of values from the line 14 we passed in. `strings` is a list of the text and values are all the variables like name and age.
 
-On line 3, we iterate (loop through) all the values stored inside the strings variable and we add parentheses around them.
+On line 3, we iterate (loop through) all the values stored inside the strings variable, and we add parentheses around them.
 So the end result in sentence variable is **My name is(Ali) and I'm (42) years old. -The end-**.

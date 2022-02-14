@@ -36,7 +36,7 @@ let myObj = {
 myObj.sayHi() // Outputs 'Hi there'
 ```
 
-Objects are very common in JavaScript and is used very often to have a place to store data in and it is used in modern API's to interact with frameworks/libraries.
+Objects are very common in JavaScript and is used very often to have a place to store data in, and it is used in modern APIs to interact with frameworks/libraries.
 
 ## this
 
@@ -64,7 +64,7 @@ JavaScript is sometimes called ECMAScript. You can read more about it [here](htt
 
 ## Attaching new variables
 
-In the past prototype was used to attach new stuff to objects but there are easier and better way of doing that.
+In the past prototype was used to attach new stuff to object but there are easier and better way of doing that.
 
 ```javascript
 let myObj = {}
@@ -86,7 +86,7 @@ console.log(myObj.name) // Outputs 'Stark'
 // TODO: name of the keys in "" and []
 ```
 
-You can also use space or other signs as a key but you have to use quote sign `'` around the key.
+You can also use space or other signs as a key, but you have to use quote sign `'` around the key.
 
 ```javascript
 let myObj = {

@@ -48,7 +48,7 @@ console.log(mySet)
 // Set { 9, 1, 2, 4, 5 }
 ```
 
-With delete method we can delete elements and it returns true or false based on if that value existed in our set.
+With delete method we can delete elements, and it returns true or false based on if that value existed in our set.
 
 ## has()
 
@@ -65,7 +65,7 @@ console.log(mySet.has(myObject)) // true
 ```
 
 We can use `has()` method to check if that value exists. But as you can see from this example on line 5 that we add the object `myObject` that looks like what we are trying to check on line 8.
-But these are not the same value although they look the same.
+But these are not the same value, although they look the same.
 
 On line 9 you can see that it returns true because we have the exact object we added on line 3.
 

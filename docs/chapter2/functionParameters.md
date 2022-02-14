@@ -15,9 +15,9 @@ myFn(4, 5) // 4, 5
 
 On the first line we have an arrow function that have `a` and `b` as parameters.
 It returns `console.log(a, b)`.
-On line 3 we call this function with only one parameter and it returns 3, 2.
+On line 3 we call this function with only one parameter, and it returns 3, 2.
 
-On line 5 there are no parameters and it uses the default values as we set it to be on line 1.
+On line 5 there are no parameters, and it uses the default values as we set it to be on line 1.
 
 And on line 7 we have both parameters.
 

@@ -57,7 +57,7 @@ console.log(myArr.indexOf('four')) // this outputs 3
 
 Since array indexes starts with 0, the string 'four' have the index of 3.
 
-If the `indexOf` method can not find the value in array, it just return `-1`.
+If the `indexOf` method can not find the value in array, it just returns `-1`.
 
 ## Length
 
@@ -93,6 +93,6 @@ myArr.push('y')
 console.log(isItEnough(myArr)) // this outputs 'Yes we have 3 or more values'
 ```
 
-As you can see in the code above, we declare and array on line 1. Then we made a function `isItEnough` and passed the array as input to check if we have 3 or more values. If you look at the line 5 in the if statement expression, we use `&&`. That means AND. So first we check if we have some value in `inputArr` and then by using the AND operator we ask if it also has the length of 3 or more. If we don't have any value for `inputArr`, the rest of the checks inside the if statement expression is not called and we jump right out of the if scope.
+As you can see in the code above, we declare and array on line 1. Then we made a function `isItEnough` and passed the array as input to check if we have 3 or more values. If you look at the line 5 in the if statement expression, we use `&&`. That means AND. So first we check if we have some value in `inputArr` and then by using the AND operator we ask if it also has the length of 3 or more. If we don't have any value for `inputArr`, the rest of the checks inside the if statement expression is not called, and we jump right out of the if scope.
 
 Array have a lot more methods like `push` and properties. But let us not go too fast. I'm going to explain more about them in combination of other parts in this book later on.

@@ -89,11 +89,11 @@ const bruce = new Human('Bruce', 'Banner')
 console.log(bruce.fullname) // Bruce Banner
 ```
 
-This is a getter but you can not add new value to the `fullname` variable like this: `bruce.fullname = 'something else'`
+This is a getter, but you can not add new value to the `fullname` variable like this: `bruce.fullname = 'something else'`
 
 ## Setter
 
-Let us use the last example and add a setter so we can change the fullname value.
+Let us use the last example and add a setter, so we can change the `fullname` value.
 
 ```javascript
 class Human {

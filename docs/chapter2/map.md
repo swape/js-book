@@ -4,7 +4,7 @@ Map is almost the same as `set` on previous page. It has all the methods like `h
 
 ## set()
 
-You can add new values using `set()` method. The first argument is the key and the secound is the value.
+You can add new values using `set()` method. The first argument is the key and the second is the value.
 The key can be number, string or even an object.
 
 ```javascript
@@ -60,10 +60,10 @@ Output from myMap.entries():
 */
 ```
 
-As you can see on line 5, that you cacn chain many `set()` methods together if you like. But I think it is nicer to add one at a time.
+As you can see on line 5, that you can chain many `set()` methods together if you like. But I think it is nicer to add one at a time.
 
 You can get all the keys or values by using `keys()` and `values()` method. And both with entries.
-You can also use the built in forEach to iterate every item.
+You can also use the built-in forEach to iterate every item.
 
 ```javascript
 const myMap = new Map()

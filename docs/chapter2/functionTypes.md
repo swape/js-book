@@ -19,7 +19,7 @@ function myFunc() {
 }
 ```
 
-This is the most normal way of declaring functions and you are going to use most of these.
+This is the most normal way of declaring functions, and you are going to use most of these.
 
 ## Function Expression
 
@@ -70,4 +70,4 @@ const myFunc2 = (name, age) => 'My name is ' + name + ' and my age is ' + age
 
 There are some differences between these 3 way of declaring the functions.
 
-I like to use the arrow function as much as I can when I bind them to an object and I like the function declaration when is just alone.
+I like to use the arrow function as much as I can when I bind them to an object, and I like the function declaration when is just alone.

@@ -4,7 +4,7 @@ Variables are like "drawers" we put stuff in.
 
 ## let
 
-These variables can have different forms and we are going to learn them all. We can start by making a variable to store a number in.
+These variables can have different forms, and we are going to learn them all. We can start by making a variable to store a number in.
 
 ```javascript
 let myVar = 3
@@ -17,7 +17,7 @@ let mySuperNumber = 42
 let otherNumber = 1
 ```
 
-A variable name can not contain space and it can not start with a number. It is very usual to name the variable something that describes the value it stores so that we remember what it is suppose to contain. We can later on add more value to the ones we created. Let us write something to console to see how it works. Open up the JavaScript console to see the result.
+A variable name can not contain space, and it can not start with a number. It is very usual to name the variable something that describes the value it stores so that we remember what it is supposed to contain. We can later on add more value to the ones we created. Let us write something to console to see how it works. Open up the JavaScript console to see the result.
 
 ```javascript
 let firstVar = 10
