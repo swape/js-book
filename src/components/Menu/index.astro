@@ -1,0 +1,48 @@
+---
+interface FilteredData extends HeadingsType {
+  url: string
+  chapter: string
+}
+
+interface HeadingsType {
+  depth: number
+  slug: string
+  text: string
+}
+
+interface GlobType {
+  url: string
+  getHeadings: () => HeadingsType[]
+}
+
+function filterData(data: GlobType[]): FilteredData[] {
+  const retData = []
+
+  data.forEach((item) => {
+    const url = item.url
+    item.getHeadings().forEach((heading) => {
+      retData.push({
+        ...heading,
+        url,
+        chapter: url.split('/')[1].split('chapter')[1],
+      })
+    })
+  })
+  return retData
+}
+
+let data = await Astro.glob('../../pages/chapter*/*.md')
+const menuList = filterData(data)
+---
+
+<div>
+  <ul>
+    {
+      menuList.map((items) => (
+        <li>
+          <a href={items.url + '#' + items.slug}>{items.text}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
