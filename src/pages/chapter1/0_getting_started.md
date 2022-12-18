@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Getting Started"
+---
 # Getting Started
 
 You can start by learning how to write HTML code and maybe CSS and then come back here to learn about JavaScript.
