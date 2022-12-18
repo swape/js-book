@@ -1,0 +1,20 @@
+---
+import Menu from '../components/Menu/index.astro'
+import '../styles.css'
+
+const { frontmatter } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <title>{frontmatter.title || 'JS'}</title>
+  </head>
+  <body>
+    <nav><Menu /></nav>
+    <main>
+      <section>
+        <slot />
+      </section>
+    </main>
+  </body>
+</html>
