@@ -16,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "@typescript-eslint/parser": "^5.46.1",
+    "astro": "^1.7.1",
     "eslint": "^8.30.0",
     "eslint-plugin-astro": "^0.21.1",
     "prettier": "^2.8.1",
