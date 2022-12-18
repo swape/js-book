@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Variables"
+---
 # Variables
 
 Variables are like "drawers" we put stuff in.
