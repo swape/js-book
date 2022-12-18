@@ -1,16 +1,24 @@
 {
   "name": "js-book",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Another JavaScript book explained by Alireza Balouch",
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "update": "npm upgrade astro",
+    "lint": "eslint --ext .js,.ts,.astro src",
+    "format": "prettier --write ."
   },
   "author": "Alireza Balouch",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^0.22.2"
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.30.0",
+    "eslint-plugin-astro": "^0.21.1",
+    "prettier": "^2.8.1",
+    "prettier-plugin-astro": "^0.7.0"
   }
 }
