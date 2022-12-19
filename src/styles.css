@@ -1,19 +1,31 @@
-html,body{
-    padding: 0;
-    margin: 0;
-}
-body {
-    font-family: sans-serif;
-    font-size: 20px;
-    color: #333333;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  display: flex;
 }
 
-.astro-code{
-    padding: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
-
+.astro-code {
+  @apply p-3 rounded-md my-3 text-sm;
 }
-section{
-    padding: 10px;
+
+p > code {
+  @apply bg-slate-100 font-mono px-1 text-gray-700 text-sm;
+}
+
+section {
+  @apply p-2 overflow-auto;
+}
+
+h1 {
+  @apply text-3xl pb-5 pt-3;
+}
+
+h2 {
+  @apply text-xl pt-2 pb-3;
+}
+
+p {
+  @apply py-1;
 }

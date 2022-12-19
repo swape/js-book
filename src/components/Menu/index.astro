@@ -35,14 +35,28 @@ let data = await Astro.glob('../../pages/chapter*/*.md')
 const menuList = filterData(data)
 ---
 
-<div>
-  <ul>
+<div class="menu-container">
+  <ul class="pt-5 pl-4">
     {
       menuList.map((items) => (
-        <li>
-          <a href={items.url + '#' + items.slug}>{items.text}</a>
+        <li class={'level-' + items.depth}>
+          <a class="hover:text-blue-600" href={items.url + '#' + items.slug}>
+            {items.text}
+          </a>
         </li>
       ))
     }
   </ul>
 </div>
+<style>
+  .menu-container {
+    min-width: 210px;
+  }
+  .level-1 {
+    @apply py-1 mt-1 px-2;
+  }
+
+  .level-2 {
+    @apply pl-5 text-sm;
+  }
+</style>
