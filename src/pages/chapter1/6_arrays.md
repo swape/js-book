@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Array"
+---
 # Array
 
 A collection of stuff.

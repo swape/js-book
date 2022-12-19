@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Function types"
+---
 # Function Types
 
 Now that we know how to define a function and how to use a function, we can take a look at other ways we can make functions.

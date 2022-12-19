@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Set"
+---
 # Set
 
 `set` is a type of collection like array.

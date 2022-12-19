@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Spread Operators"
+---
 # Spread Operator
 
 ```javascript

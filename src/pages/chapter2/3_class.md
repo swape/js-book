@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Class"
+---
 # Class
 
 Classes in JavaScript is not like classes in other languages.

@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Map"
+---
 # Map
 
 Map is almost the same as `set` on previous page. It has all the methods like `has()` `delete()` `clear()` and `size`.

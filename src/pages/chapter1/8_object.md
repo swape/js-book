@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Object"
+---
 # Object
 
 A collection of values/functions.

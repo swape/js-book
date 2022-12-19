@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Template Literals"
+---
 # Template Literals
 
 When you want to add some dynamic text inside some other text, you have to concat some strings and some variables to make it happen like this:

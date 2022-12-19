@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Functions"
+---
 # Functions
 
 We have already started to use functions like console.log and parseInt. But what is a function?

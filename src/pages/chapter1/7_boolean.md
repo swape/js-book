@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Boolean"
+---
 # Boolean
 
 On or off, true or false.

@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Array Loops"
+---
 # Array Loops
 
 ## Map

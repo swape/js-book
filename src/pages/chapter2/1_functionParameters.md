@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/normal.astro
+title: "Function Parameters"
+---
 # Function Parameters
 
 When we make functions, we can pass some parameters.
