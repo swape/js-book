@@ -84,7 +84,9 @@ But it is important to know what can produce true or false values.
 
 Remember that you are reading the code a lot more than you write it, so it is really important to be clear and keep the code as simple as we can.
 
-::: tip Falsy values:
+<div class="tip"> 
+Falsy values:
+
 **false** (The keyword false)
 
 **0** (The number zero)
@@ -100,12 +102,14 @@ Remember that you are reading the code a lot more than you write it, so it is re
 
 **NaN** (not a number)
 
-:::
+</div>
 
-::: warning Nullish values:
+<div class="warning"> 
+Nullish values:
+
 **null**
 
 **undefined**
-:::
+</div>
 
 **undefined** is not valid in JSON files while **null** is ok.

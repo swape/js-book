@@ -29,3 +29,11 @@ h2 {
 p {
   @apply py-1;
 }
+
+.tip {
+  @apply p-5 bg-green-50 rounded-md my-5;
+}
+
+.warning {
+  @apply p-5 bg-red-50 rounded-md my-5;
+}

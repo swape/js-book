@@ -62,9 +62,9 @@ There are some cases this refers to completely other objects if you use it witho
 
 To avoid issues with `this`, you can use this string `'use strict'` at top of your script or inside your function to tell the browser that it should follow the "strict mode" that was introduced in version 5 of JavaScript/ECMAScript.
 
-::: tip
+<div class="tip">
 JavaScript is sometimes called ECMAScript. You can read more about it [here](https://en.wikipedia.org/wiki/ECMAScript).
-:::
+</div>
 
 ## Attaching new variables
 

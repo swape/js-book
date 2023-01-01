@@ -142,9 +142,11 @@ Output:
 }
 ```
 
-::: tip PS:
+<div class="tip"> 
+PS:
+
 In real project you have to do more than just trusting that the url is correct and we might not always get the right information.
-:::
+</div>
 
 You can also assign the `fetch` to `const` before running `then` function.
 So here is same example:
@@ -244,8 +246,8 @@ myPromise.then(printOut)
 
 `resolve` from line 7 is passing only one argument `2`. When `then` function on line 10 is run, it passes the `2` as argument to our `printOut` function.
 
-::: tip
+<div class="tip">
 You get more than 3 functions on Promise, but those are not used so often.
 
 But if you like, you can read more about it here: [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-:::
+</div>
