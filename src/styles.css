@@ -7,7 +7,15 @@ main {
 }
 
 .astro-code {
-  @apply p-3 rounded-md my-3 text-sm;
+  counter-reset: line;
+  @apply p-4 pl-10 rounded-md my-3 text-sm;
+}
+
+.astro-code:hover span.line:before {
+  counter-increment: line;
+  content: counter(line);
+  transform: translateX(-30px);
+  @apply text-gray-600 absolute inline-block;
 }
 
 p > code {
