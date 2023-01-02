@@ -15,7 +15,7 @@
   "author": "Alireza Balouch",
   "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.47.1",
+    "@typescript-eslint/parser": "^5.48.0",
     "astro": "^1.8.0",
     "eslint": "^8.31.0",
     "eslint-plugin-astro": "^0.21.1",
