@@ -249,5 +249,5 @@ myPromise.then(printOut)
 <div class="tip">
 You get more than 3 functions on Promise, but those are not used so often.
 
-But if you like, you can read more about it here: [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+But if you like, you can read more about it here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noreferrer noopener" >Promise</a>
 </div>

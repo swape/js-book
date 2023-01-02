@@ -18,6 +18,10 @@ section {
   @apply p-2 overflow-auto;
 }
 
+section a {
+  @apply underline text-blue-900 hover:text-indigo-800;
+}
+
 h1 {
   @apply text-3xl pb-5 pt-3;
 }
