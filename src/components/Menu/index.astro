@@ -27,7 +27,10 @@ const menuList = filterData(data)
     {
       menuList.map((items) => (
         <li class={'level-' + items.depth}>
-          <a class="hover:text-blue-600" href={items.url + '#' + items.slug}>
+          <a
+            class="hover:text-blue-600"
+            href={`${items.url}${items.depth > 1 ? '#' + items.slug : ''}`}
+          >
             {items.text}
           </a>
         </li>
