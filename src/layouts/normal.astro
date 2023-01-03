@@ -16,5 +16,16 @@ const { frontmatter } = Astro.props
       <aside><Menu /></aside>
       <section><slot /></section>
     </main>
+    <script>
+      const burger = document.querySelector('.burger')
+      const menu = document.querySelector('.menu-container')
+      const closeButton = document.querySelector('.close-button')
+
+      function toggle() {
+        menu.classList.toggle('closed')
+      }
+      burger.addEventListener('click', toggle)
+      closeButton.addEventListener('click', toggle)
+    </script>
   </body>
 </html>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 main {
-  display: flex;
+  @apply flex;
 }
 
 .astro-code {

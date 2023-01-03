@@ -1,3 +1,15 @@
 <div class="bg-slate-800 py-3 px-4">
+  <button class="burger">| | |</button>
   <a href="/" class="text-white text-xl">JS-Book</a>
 </div>
+<style>
+  .burger {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .burger {
+      transform: rotate(90deg) scale(0.9);
+      @apply inline text-slate-50;
+    }
+  }
+</style>
