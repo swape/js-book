@@ -23,7 +23,7 @@ p > code {
 }
 
 section {
-  @apply p-2 overflow-auto;
+  @apply p-2 overflow-auto pb-14;
 }
 
 section a {
