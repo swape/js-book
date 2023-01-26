@@ -15,8 +15,11 @@ const { frontmatter } = Astro.props
   <body>
     <nav><TopBar /></nav>
     <main class="container mx-auto">
-      <aside><Menu /></aside>
-      <section><slot /></section>
+      <aside><Menu menuList={menuList} /></aside>
+      <section>
+        <slot />
+        <Footer menuList={menuList} />
+      </section>
     </main>
     <script>
       const $$ = (q) => document.querySelector(q)
