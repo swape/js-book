@@ -19,15 +19,13 @@ const { frontmatter } = Astro.props
       <section><slot /></section>
     </main>
     <script>
-      const burger = document.querySelector('.burger')
-      const menu = document.querySelector('.menu-container')
-      const closeButton = document.querySelector('.close-button')
-
+      const $$ = (q) => document.querySelector(q)
+      const menu = $$('.menu-container')
       function toggle() {
         menu.classList.toggle('closed')
       }
-      burger.addEventListener('click', toggle)
-      closeButton.addEventListener('click', toggle)
+      $$('.burger').addEventListener('click', toggle)
+      $$('.close-button').addEventListener('click', toggle)
     </script>
   </body>
 </html>
