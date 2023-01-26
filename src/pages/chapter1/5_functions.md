@@ -23,7 +23,7 @@ function myFunc() {
   return 'hello'
 }
 
-console.log(myFunc() + ' world')
+console.log( myFunc() + ' world' )
 ```
 
 This should log hello world in the console.
@@ -34,7 +34,7 @@ function myFunc(myArg) {
   return 'hello ' + myArg
 }
 
-console.log(myFunc('John'))
+console.log( myFunc('John') )
 ```
 
 As you can see on line 5 we pass the name John to `myFunc`. And on line 1 we assign that to the variable called `myArg`.
@@ -62,15 +62,19 @@ function greet() {
   return 'Hello ' + myName
 }
 
-console.log(greet())
+console.log( greet() )
 // let us change the myName value here
 myName = 'Rob'
-console.log(greet())
+console.log( greet() )
 ```
 
 This should first log Hello John and then when we call `greet` again on line 10, it is changed to Hello Rob.
 
 This is not the best practice. We should try to avoid getting variables from outside the function scope unless we pass that as argument. This function is _un-pure_. To make this function _pure_, we have to make a function argument to pass the value.
+
+Arguments (sometimes called parameters) are inputs for function.
+Think of it as microphone input to your music system.
+What you put in that function can now be renamed and be used inside the function scope.
 
 ```javascript
 let myName = 'John'
@@ -79,10 +83,10 @@ function greet(myArg) {
   return 'Hello ' + myArg
 }
 
-console.log(greet(myName))
+console.log( greet(myName) )
 // let us change the myName variable here
 myName = 'Rob'
-console.log(greet(myName))
+console.log( greet(myName) )
 ```
 
 This is better. When we write JavaScript we can encounter some codes that run in the background (async) and then we never know if the variable myName is changed or not in the time we need that. So to avoid future errors and endless hours of debugging, try not to access variables outside the function scope unless it has come from argument list.
@@ -94,7 +98,7 @@ function add(a, b) {
   return parseInt(a) + parseInt(b)
 }
 
-console.log(add('1', 8))
+console.log( add('1', 8) )
 ```
 
 Now we can send text or number to our add function, and it converts them to number and return the sum back.
