@@ -1,0 +1,53 @@
+---
+const { menuList } = Astro.props
+---
+
+<div class="menu-container open closed">
+  <button class="close-button">x</button>
+  <ul class="pt-5 pl-4">
+    {
+      menuList.map((items) => (
+        <li class={'level-' + items.depth}>
+          <a
+            class="hover:text-blue-600"
+            href={`${items.url}${items.depth > 1 ? '#' + items.slug : ''}`}
+          >
+            {items.text}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+<style>
+  .menu-container {
+    min-width: 210px;
+    @apply pb-10;
+  }
+
+  .level-1 {
+    @apply py-1 mt-1 px-2;
+  }
+
+  .level-2 {
+    @apply pl-5 text-sm;
+  }
+  .close-button {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .open {
+      transition: all 300ms;
+      @apply fixed left-0 bottom-0 top-0 bg-slate-50 overflow-auto z-20;
+    }
+    .closed {
+      transform: translateX(-220px);
+    }
+
+    .close-button {
+      height: 52px;
+      width: 52px;
+      @apply block bg-slate-900 text-slate-50 absolute right-0 shadow-md opacity-70 hover:opacity-100;
+    }
+  }
+</style>

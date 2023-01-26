@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply flex;
+}
+
+.astro-code {
+  counter-reset: line;
+  @apply p-4 pl-10 rounded-md my-3 text-sm;
+}
+
+.astro-code:hover span.line:before {
+  counter-increment: line;
+  content: counter(line);
+  transform: translateX(-30px);
+  @apply text-gray-600 absolute inline-block;
+}
+
+p > code {
+  @apply bg-slate-100 font-mono px-1 text-gray-700 text-sm;
+}
+
+section {
+  @apply p-2 overflow-auto pb-14;
+}
+
+section a {
+  @apply underline text-blue-900 hover:text-indigo-800;
+}
+
+h1 {
+  @apply text-3xl pb-5 pt-3;
+}
+
+h2 {
+  @apply text-xl pt-2 pb-3;
+}
+
+p {
+  @apply py-1;
+}
+
+.tip {
+  @apply p-5 bg-green-50 rounded-md my-5;
+}
+
+.warning {
+  @apply p-5 bg-red-50 rounded-md my-5;
+}

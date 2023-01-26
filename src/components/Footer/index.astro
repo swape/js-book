@@ -1,0 +1,86 @@
+---
+import type { FilteredData } from '../../types'
+
+const { menuList } = Astro.props
+
+function findPrevAndNext(list: FilteredData[], path: string) {
+  const current = { prev: null, next: null }
+  let prev = null
+
+  list.forEach((item) => {
+    if (item.depth === 1) {
+      if (current.prev !== null && current.next === null) {
+        current.next = item
+      }
+
+      if (item.url === path && current.prev === null) {
+        current.prev = prev
+      }
+      prev = item
+    }
+  })
+
+  return current
+}
+
+const { prev, next } = findPrevAndNext(menuList, Astro.url.pathname)
+---
+
+<footer>
+  {
+    prev?.url ? (
+      <a href={prev.url} class="link">
+        <span class="i-mi-chevron-left"> </span>
+        {prev.text}
+      </a>
+    ) : (
+      <div>&nbsp;</div>
+    )
+  }
+  {
+    next?.url ? (
+      <a href={next.url} class="link">
+        {next.text}
+        <span class="i-mi-chevron-right"> </span>
+      </a>
+    ) : (
+      <div>&nbsp;</div>
+    )
+  }
+</footer>
+
+<style>
+  footer {
+    @apply pt-10 flex justify-between;
+  }
+
+  footer > .link {
+    @apply no-underline flex items-center hover:text-black;
+  }
+
+  .i-mi-chevron-left {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M14.707 5.293a1 1 0 0 1 0 1.414L9.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0z'/%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+  }
+
+  .i-mi-chevron-right {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M9.293 18.707a1 1 0 0 1 0-1.414L14.586 12L9.293 6.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z'/%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+  }
+</style>

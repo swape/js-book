@@ -1,0 +1,57 @@
+---
+import Menu from '../components/Menu/index.astro'
+import TopBar from '../components/TopBar/index.astro'
+import Footer from '../components/Footer/index.astro'
+
+import '../styles.css'
+
+import { FilteredData, GlobType } from '../types'
+let pages = await Astro.glob('../pages/chapter*/*.md')
+
+function filterData(data: GlobType[]): FilteredData[] {
+  const retData = []
+
+  data.forEach((item) => {
+    const url = item.url
+    item.getHeadings().forEach((heading) => {
+      retData.push({
+        ...heading,
+        url,
+        chapter: url.split('/')[1].split('chapter')[1],
+      })
+    })
+  })
+  return retData
+}
+
+const menuList = filterData(pages)
+
+const { frontmatter } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <title>{frontmatter?.title || 'JS'}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Java script book for the brave aliens." />
+  </head>
+  <body>
+    <nav><TopBar /></nav>
+    <main class="container mx-auto">
+      <aside><Menu menuList={menuList} /></aside>
+      <section>
+        <slot />
+        <Footer menuList={menuList} />
+      </section>
+    </main>
+    <script>
+      const $$ = (q) => document.querySelector(q)
+      const menu = $$('.menu-container')
+      function toggle() {
+        menu.classList.toggle('closed')
+      }
+      $$('.burger').addEventListener('click', toggle)
+      $$('.close-button').addEventListener('click', toggle)
+    </script>
+  </body>
+</html>
