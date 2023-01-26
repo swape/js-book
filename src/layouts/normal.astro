@@ -1,7 +1,30 @@
 ---
 import Menu from '../components/Menu/index.astro'
 import TopBar from '../components/TopBar/index.astro'
+import Footer from '../components/Footer/index.astro'
+
 import '../styles.css'
+
+import { FilteredData, GlobType } from '../types'
+let pages = await Astro.glob('../pages/chapter*/*.md')
+
+function filterData(data: GlobType[]): FilteredData[] {
+  const retData = []
+
+  data.forEach((item) => {
+    const url = item.url
+    item.getHeadings().forEach((heading) => {
+      retData.push({
+        ...heading,
+        url,
+        chapter: url.split('/')[1].split('chapter')[1],
+      })
+    })
+  })
+  return retData
+}
+
+const menuList = filterData(pages)
 
 const { frontmatter } = Astro.props
 ---

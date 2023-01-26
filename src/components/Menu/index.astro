@@ -1,24 +1,5 @@
 ---
-import { FilteredData, GlobType } from '../../types'
-
-function filterData(data: GlobType[]): FilteredData[] {
-  const retData = []
-
-  data.forEach((item) => {
-    const url = item.url
-    item.getHeadings().forEach((heading) => {
-      retData.push({
-        ...heading,
-        url,
-        chapter: url.split('/')[1].split('chapter')[1],
-      })
-    })
-  })
-  return retData
-}
-
-let data = await Astro.glob('../../pages/chapter*/*.md')
-const menuList = filterData(data)
+const { menuList } = Astro.props
 ---
 
 <div class="menu-container open closed">
