@@ -13,13 +13,16 @@ function findPrevAndNext(list: FilteredData[], path: string) {
         current.next = item
       }
 
-      if (item.url === path && current.prev === null) {
+      if (
+        item.url.replace('/', '') === path.replace('/', '') &&
+        current.prev === null
+      ) {
         current.prev = prev
       }
       prev = item
     }
   })
-  console.log(current, path)
+  console.log(current, path.replace('/', ''))
   return current
 }
 
