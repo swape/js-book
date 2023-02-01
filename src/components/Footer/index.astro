@@ -14,7 +14,7 @@ function findPrevAndNext(list: FilteredData[], path: string) {
       }
 
       if (
-        item.url.replace('/', '') === path.replace('/', '') &&
+        item.url.replaceAll('/', '') === path.replaceAll('/', '') &&
         current.prev === null
       ) {
         current.prev = prev
@@ -22,7 +22,7 @@ function findPrevAndNext(list: FilteredData[], path: string) {
       prev = item
     }
   })
-  console.log(current, path.replace('/', ''))
+  console.log(current, path.replaceAll('/', ''))
   return current
 }
 
