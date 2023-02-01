@@ -49,3 +49,12 @@ p {
 .warning {
   @apply p-5 bg-red-50 rounded-md my-5;
 }
+
+@media only screen and (max-width: 600px) {
+  .backdrop {
+    @apply fixed inset-0 bg-slate-500 opacity-50;
+  }
+  .backdrop.closed {
+    @apply hidden;
+  }
+}
