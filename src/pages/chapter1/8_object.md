@@ -137,6 +137,17 @@ console.log(objB.name) // This outputs Eli
 console.log(objA.name) // This outputs Noah
 ```
 
+You can also do the new way of copy an object like this:
+
+```javascript
+let objA = { name: 'Eli' }
+let objB = structuredClone(objA)
+objA.name = 'Noah'
+
+console.log(objB.name) // This outputs Eli
+console.log(objA.name) // This outputs Noah
+```
+
 You can also use [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) to copy like this.
 
 ```javascript
