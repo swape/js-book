@@ -1,6 +1,6 @@
 {
   "name": "js-book",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Another JavaScript book explained by Alireza Balouch",
   "main": "index.js",
   "scripts": {
@@ -15,15 +15,15 @@
   "author": "Alireza Balouch",
   "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.49.0",
-    "astro": "^2.0.2",
-    "eslint": "^8.32.0",
-    "eslint-plugin-astro": "^0.23.0",
-    "prettier": "^2.8.3",
-    "prettier-plugin-astro": "^0.8.0"
+    "@typescript-eslint/parser": "^6.4.0",
+    "astro": "^2.10.9",
+    "eslint": "^8.47.0",
+    "eslint-plugin-astro": "^0.28.0",
+    "prettier": "^3.0.2",
+    "prettier-plugin-astro": "^0.11.1"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^3.0.0",
-    "tailwindcss": "^3.2.4"
+    "@astrojs/tailwind": "^4.0.0",
+    "tailwindcss": "^3.3.3"
   }
 }
