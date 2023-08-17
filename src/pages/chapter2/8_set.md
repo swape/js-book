@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Set"
+title: 'Set'
 ---
+
 # Set
 
 `set` is a type of collection like array.

@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Promise"
+title: 'Promise'
 ---
+
 # Promise
 
 Asynchronous and Synchronous.
@@ -24,10 +25,10 @@ const fetchMyData = new Promise((resolve, reject) => {
 })
 
 fetchMyData
-  .then(data => {
+  .then((data) => {
     console.log(data)
   })
-  .catch(error => {
+  .catch((error) => {
     console.log('error:', error)
   })
   .finally(() => {
@@ -46,7 +47,7 @@ this is running after 'then' and 'catch'
 
 As you can se we pass a function to our `Promise`. This function have 2 argument functions. "resolve" and "reject".
 
-When we user `resolve('some data')`, we can get that data with `.then()` function on our `fetchMyData` object.
+When we use `resolve('some data')`, we can get that data with `.then()` function on our `fetchMyData` object.
 
 ## catch (reject)
 
@@ -56,10 +57,10 @@ const fetchMyData = new Promise((resolve, reject) => {
 })
 
 fetchMyData
-  .then(data => {
+  .then((data) => {
     console.log(data)
   })
-  .catch(error => {
+  .catch((error) => {
     console.log('error:', error)
   })
   .finally(() => {
@@ -91,16 +92,16 @@ const fetchMyData = new Promise((resolve, reject) => {
 })
 
 fetchMyData
-  .then(data => {
+  .then((data) => {
     return data * 10
   })
-  .then(data => {
+  .then((data) => {
     return data + 2
   })
-  .then(data => {
+  .then((data) => {
     console.log(data)
   })
-  .catch(error => {
+  .catch((error) => {
     console.log('error:', error)
   })
   .finally(() => {
@@ -123,8 +124,8 @@ But just returning some number or text don't require async. Let us use something
 
 ```javascript
 fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json))
+  .then((response) => response.json())
+  .then((json) => console.log(json))
 ```
 
 On line 1 we have the URL of where it can fetch some data.
@@ -146,6 +147,7 @@ Output:
 PS:
 
 In real project you have to do more than just trusting that the url is correct and we might not always get the right information.
+
 </div>
 
 You can also assign the `fetch` to `const` before running `then` function.
@@ -154,18 +156,18 @@ So here is same example:
 ```javascript
 const myData = fetch('https://jsonplaceholder.typicode.com/todos/1')
 
-myData.then(response => response.json()).then(json => console.log(json))
+myData.then((response) => response.json()).then((json) => console.log(json))
 ```
 
 Let us make this even better:
 
 ```javascript
-const fetchData = id =>
+const fetchData = (id) =>
   fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
 
 const myData = fetchData(1)
 
-myData.then(response => response.json()).then(json => console.log(json))
+myData.then((response) => response.json()).then((json) => console.log(json))
 ```
 
 Now we can re-use this function with different id's.
@@ -173,10 +175,10 @@ Now we can re-use this function with different id's.
 But we can do better:
 
 ```javascript
-const fetchData = id => {
+const fetchData = (id) => {
   return new Promise((resolve, reject) => {
     fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
-      .then(data => {
+      .then((data) => {
         if (data) {
           try {
             const jsonData = data.json()
@@ -187,15 +189,13 @@ const fetchData = id => {
         }
         return reject(new Error('Error'))
       })
-      .catch(e => {
+      .catch((e) => {
         return reject(e)
       })
   })
 }
 
-fetchData(1)
-  .then(console.log)
-  .catch(console.log)
+fetchData(1).then(console.log).catch(console.log)
 ```
 
 Now we have made a function that fetch and return json or an error.
@@ -250,4 +250,5 @@ myPromise.then(printOut)
 You get more than 3 functions on Promise, but those are not used so often.
 
 But if you like, you can read more about it here: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noreferrer noopener" >Promise</a>
+
 </div>

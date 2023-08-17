@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Object"
+title: 'Object'
 ---
+
 # Object
 
 A collection of values/functions.

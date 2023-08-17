@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Semicolons"
+title: 'Semicolons'
 ---
+
 # Semicolons
 
 Some people like to end the lines or statements by adding `;` semicolons. But JavaScript have "ASI" (Automatic Semicolon Insertion). And it is optional to use semicolons at the end. There are some rare use cases where you need to add the semicolons like when the line starts with `(` "opening parenthesis". But I think that is a rare situation, and you don't need it for normal coding. And if you keep away from bad parts you never encounter these issues.

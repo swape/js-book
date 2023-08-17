@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Concatenating"
+title: 'Concatenating'
 ---
+
 # Concatenating
 
 1 + 1

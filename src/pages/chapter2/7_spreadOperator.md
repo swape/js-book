@@ -1,18 +1,19 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Spread Operators"
+title: 'Spread Operators'
 ---
+
 # Spread Operator
 
 ```javascript
 const a = (...values) => {
-  values.forEach( i => {
+  values.forEach((i) => {
     console.log(':' + i)
   })
 }
 
-a( 1, 2 )
-a( 'x', 'y', 'z' )
+a(1, 2)
+a('x', 'y', 'z')
 ```
 
 When you don't know how many arguments you are going to pass into a function, you can use the spread operator. This is by adding 3 dots before the variable.
@@ -22,14 +23,14 @@ Let's make sum function using this.
 ```javascript
 const sum = (...values) => {
   let output = 0
-  values.forEach( i => {
+  values.forEach((i) => {
     output += parseInt(i)
   })
   return output
 }
 
 const val1 = sum(1, 2) // 3
-const val2 = sum( 1, 2, 3, 4, 5 ) // 15
+const val2 = sum(1, 2, 3, 4, 5) // 15
 ```
 
 You can use this to concat arrays.
@@ -49,7 +50,7 @@ This is same as using the old concat function:
 const arr1 = [0, 1, 2]
 const arr2 = [3, 4, 5]
 
-const arr3 = arr1.concat( arr2 )
+const arr3 = arr1.concat(arr2)
 ```
 
 You can use spread syntax to do some "destructuring".
@@ -69,7 +70,7 @@ const myObj = {
   b: 2,
   c: 3,
   x: 'some other things',
-  hello: 'some text here'
+  hello: 'some text here',
 }
 
 const { x, ...others } = myObj

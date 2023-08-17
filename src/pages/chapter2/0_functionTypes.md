@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Function types"
+title: 'Function types'
 ---
+
 # Function Types
 
 Now that we know how to define a function and how to use a function, we can take a look at other ways we can make functions.
@@ -39,7 +40,7 @@ A function expression have to be declared first before you can call them.
 These can be without a name like the example bellow. These are called anonymous function expression.
 
 ```javascript
-const myFunc = function() {
+const myFunc = function () {
   return 'some value'
 }
 ```

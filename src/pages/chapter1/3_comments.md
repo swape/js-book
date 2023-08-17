@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Comments"
+title: 'Comments'
 ---
+
 # Comments
 
 Comments are not doing anything in the code. It is just a nice way of leaving comments so that future you or other team members understand what is going on. The rule is that when you start the `//`, everything after that becomes a comment until it hits new line.

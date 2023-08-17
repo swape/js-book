@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Loops"
+title: 'Loops'
 ---
+
 # Loops
 
 Sometimes we need to do the same job several times or loop through a list to do some checking.

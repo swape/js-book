@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Boolean"
+title: 'Boolean'
 ---
+
 # Boolean
 
 On or off, true or false.
@@ -110,6 +111,7 @@ Nullish values:
 **null**
 
 **undefined**
+
 </div>
 
 **undefined** is not valid in JSON files while **null** is ok.

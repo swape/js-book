@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Function Parameters"
+title: 'Function Parameters'
 ---
+
 # Function Parameters
 
 When we make functions, we can pass some parameters.
@@ -30,7 +31,7 @@ If we don't give it a default value it returns `"undefined"` as value for that p
 If you get confused on the arrow function, here is the same function in other forms.
 
 ```javascript
-const myFn = function(a = 1, b = 2) {
+const myFn = function (a = 1, b = 2) {
   return console.log(a, b)
 }
 

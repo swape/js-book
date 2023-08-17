@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Map"
+title: 'Map'
 ---
+
 # Map
 
 Map is almost the same as `set` on previous page. It has all the methods like `has()` `delete()` `clear()` and `size`.
@@ -30,11 +31,11 @@ myMap.set(1, 'Hello')
 myMap.set('2', 'Hi')
 myMap.set(1, 'Hei')
 
-console.log( myMap.size ) // 2
-console.log( myMap ) // Map { 1 => 'Hei', '2' => 'Hi' }
-console.log( myMap.get('2') ) // 'Hi'
-console.log( myMap.get(2) ) // undefined
-console.log( myMap.get(1) ) // 'Hei'
+console.log(myMap.size) // 2
+console.log(myMap) // Map { 1 => 'Hei', '2' => 'Hi' }
+console.log(myMap.get('2')) // 'Hi'
+console.log(myMap.get(2)) // undefined
+console.log(myMap.get(1)) // 'Hei'
 ```
 
 You can overwrite old values if you use the same key, like here on line 3 and 5.
@@ -50,9 +51,9 @@ myMap.set(1, 'one').set(2, 'two') // chaining set methods
 
 console.log(myMap)
 
-console.log( myMap.keys() ) // 'somethig', 'other', 1, 2
-console.log( myMap.values() ) // 'else', 'stuff', 'one', 'two'
-console.log( myMap.entries() )
+console.log(myMap.keys()) // 'somethig', 'other', 1, 2
+console.log(myMap.values()) // 'else', 'stuff', 'one', 'two'
+console.log(myMap.entries())
 /*
 Output from myMap.entries():
 {
@@ -76,7 +77,7 @@ myMap.set('somethig', 'else')
 myMap.set('other', 'stuff')
 myMap.set(1, 'one').set(2, 'two') // chaining set methods
 
-myMap.forEach( (i,k) => {
+myMap.forEach((i, k) => {
   console.log(`${k} = ${i}`)
 })
 /*
@@ -92,12 +93,12 @@ You can add an object to a map by using `Object.entries()`
 
 ```javascript
 const myUser = {
-  name: "John",
-  age: 50
+  name: 'John',
+  age: 50,
 }
 
 const myMap = new Map(Object.entries(myUser))
 
-console.log( myMap.get('name') ) // John
-console.log( myMap.get('age') ) // 50
+console.log(myMap.get('name')) // John
+console.log(myMap.get('age')) // 50
 ```

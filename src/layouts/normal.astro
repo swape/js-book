@@ -27,11 +27,12 @@ function filterData(data: GlobType[]): FilteredData[] {
 const menuList = filterData(pages)
 
 const { frontmatter } = Astro.props
+const title = frontmatter?.title || 'JS'
 ---
 
 <html lang="en">
   <head>
-    <title>{frontmatter?.title || 'JS'}</title>
+    <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Java script book for the brave aliens." />
   </head>

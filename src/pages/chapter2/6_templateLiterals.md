@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Template Literals"
+title: 'Template Literals'
 ---
+
 # Template Literals
 
 When you want to add some dynamic text inside some other text, you have to concat some strings and some variables to make it happen like this:
@@ -27,7 +28,7 @@ const someName = 'John'
 console.log(`I'm ${someName} and my number is ${2 + 40}`)
 // I'm John and my number is 42
 
-const x = `Some numbers ${[1, 2, 3, 4, 5].map(i => i + 2)}`
+const x = `Some numbers ${[1, 2, 3, 4, 5].map((i) => i + 2)}`
 // x = Some numbers 3,4,5,6,7
 ```
 

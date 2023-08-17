@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Array Loops"
+title: 'Array Loops'
 ---
+
 # Array Loops
 
 ## Map
@@ -11,7 +12,7 @@ You can iterate or loop through an array by using the `.map()`.
 ```javascript
 const myArr = [1, 2, 3, 6, 8, 9, 3, 2]
 
-myArr.map(i => {
+myArr.map((i) => {
   console.log(i)
 })
 ```
@@ -22,7 +23,7 @@ This is same as having the function outside the map like this:
 ```javascript
 const myArr = [1, 2, 3, 6, 8, 9, 3, 2]
 
-const myFunc = i => console.log(i)
+const myFunc = (i) => console.log(i)
 
 myArr.map(myFunc)
 ```
@@ -31,7 +32,7 @@ You can also use the map function to return a new array.
 
 ```javascript
 const myArr = [1, 2, 3, 6, 8, 9, 3, 2]
-const myFunc = i => i * 2
+const myFunc = (i) => i * 2
 const newArr = myArr.map(myFunc) // [ 2, 4, 6, 12, 16, 18, 6, 4 ]
 ```
 
@@ -55,7 +56,7 @@ In this example `myFunc` is accepting 2 parameters, `v` and `i`. `v` is the valu
 ```javascript
 const myArr = [5, 4, 8, 9, 11, 4, 6]
 
-const newArr = myArr.filter(i => {
+const newArr = myArr.filter((i) => {
   return i > 5
 })
 ```
@@ -70,10 +71,10 @@ You can also **chain** map and filter together.
 const myArr = [20, 11, 1, 0, 15, 7, 8]
 
 const newArr = myArr
-  .filter(i => {
+  .filter((i) => {
     return i < 10
   })
-  .map(i => {
+  .map((i) => {
     return i + 2
   })
 ```
@@ -85,7 +86,7 @@ You can also shorten the example above like this:
 ```javascript
 const myArr = [20, 11, 1, 0, 15, 7, 8]
 
-const newArr = myArr.filter(i => i < 10).map(i => i + 2)
+const newArr = myArr.filter((i) => i < 10).map((i) => i + 2)
 ```
 
 Remember that in arrow function you can shorten things like this. But if you do a lot of stuff inside the function you should use the extended one. It is better to have a longer code that is easier to read than compact code that is harder to debug or understand.

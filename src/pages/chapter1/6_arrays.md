@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/normal.astro
-title: "Array"
+title: 'Array'
 ---
+
 # Array
 
 A collection of stuff.
@@ -100,3 +101,23 @@ console.log(isItEnough(myArr)) // this outputs 'Yes we have 3 or more values'
 As you can see in the code above, we declare and array on line 1. Then we made a function `isItEnough` and passed the array as input to check if we have 3 or more values. If you look at the line 5 in the if statement expression, we use `&&`. That means AND. So first we check if we have some value in `inputArr` and then by using the AND operator we ask if it also has the length of 3 or more. If we don't have any value for `inputArr`, the rest of the checks inside the if statement expression is not called, and we jump right out of the if scope.
 
 Array have a lot more methods like `push` and properties. But let us not go too fast. I'm going to explain more about them in combination of other parts in this book later on.
+
+## Concat
+
+You can combine two arrays by using `concat` method.
+
+```javascript
+let myArr = [1, 2, 3]
+let myArr2 = [4, 5, 6]
+let myArr3 = myArr.concat(myArr2)
+console.log(myArr3) // this outputs [ 1, 2, 3, 4, 5, 6 ]
+```
+
+You can also use the spread operator to combine arrays.
+
+```javascript
+let myArr = [1, 2, 3]
+let myArr2 = [4, 5, 6]
+let myArr3 = [...myArr, ...myArr2]
+console.log(myArr3) // this outputs [ 1, 2, 3, 4, 5, 6 ]
+```
