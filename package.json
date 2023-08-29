@@ -15,12 +15,12 @@
   "author": "Alireza Balouch",
   "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/parser": "^6.4.0",
-    "astro": "^2.10.9",
+    "@typescript-eslint/parser": "^6.4.1",
+    "astro": "^2.10.14",
     "eslint": "^8.47.0",
-    "eslint-plugin-astro": "^0.28.0",
+    "eslint-plugin-astro": "^0.29.0",
     "prettier": "^3.0.2",
-    "prettier-plugin-astro": "^0.11.1"
+    "prettier-plugin-astro": "^0.12.0"
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
