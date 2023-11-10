@@ -5,3 +5,9 @@ A book for users who want to learn JavaScript without all the extra stuff. Some 
 In this book I'll try to avoid teaching you those parts, so you can focus on writing only good code :)
 
 Read this book [here](https://js-book.mjolnirmedia.now.sh/)
+
+This is going to be a book with multiple parts. 
+
+- Basics
+- Serverside (Node) **not finished yet**
+- Browser **not finished yet**
