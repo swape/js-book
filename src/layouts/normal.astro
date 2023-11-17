@@ -57,6 +57,14 @@ const title = frontmatter?.title || 'JS'
       $$('.burger').addEventListener('click', toggle)
       $$('.close-button').addEventListener('click', toggle)
       backdrop.addEventListener('click', toggle)
+
+      const { location } = window
+      const url = location.href.split('#')[0].replace(location.origin, '')
+      const activeLink = $$('.menu-container a[href="' + url + '"]')
+      if(activeLink) {
+        activeLink.classList.add('active')
+      }
+
     </script>
   </body>
 </html>
