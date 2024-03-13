@@ -24,7 +24,7 @@
   }
 
   h2 {
-    @apply text-2xl pt-2 pb-3;
+    @apply text-2xl pt-12 pb-3;
   }
 
   p {

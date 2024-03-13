@@ -1,39 +1,40 @@
 ---
 const { menuList } = Astro.props
+const chapter = '1'
 ---
 
 <div class="menu-container open closed">
   <button class="close-button">x</button>
-  <ul class="pt-5 pl-4">
+  <menu class="pt-5 pl-2">
     {
       menuList.map((items) => (
         <li class={'level-' + items.depth}>
           <a
             class="hover:text-blue-600"
             href={`${items.url}${items.depth > 1 ? '#' + items.slug : ''}`}
-          >{items.text}</a>
+          >
+            {items.text}
+          </a>
         </li>
       ))
     }
-  </ul>
+  </menu>
 </div>
 <style>
-  li >a.active{
-    background-color: rgb(0 0 0 /0.1);
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px rgb(0 0 0 /0.4);
-    padding-left: 20px;
-    font-weight: 600;
-    display: block;
-  }
-
   .menu-container {
-    min-width: 210px;
+    min-width: 245px;
     @apply pb-10;
   }
 
   .level-1 {
-    @apply py-1 mt-1 px-2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 8px;
+    @apply py-1 px-2;
+  }
+
+  .level-1:has(> a.active) {
+    background-color: rgb(0 0 0 /0.05);
   }
 
   .level-2 {
@@ -51,7 +52,7 @@ const { menuList } = Astro.props
     }
 
     .closed {
-      transform: translateX(-220px);
+      transform: translateX(-250px);
     }
 
     .close-button {
