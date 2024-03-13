@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "update": "npm upgrade astro",
-    "lint": "eslint --ext .js,.ts,.astro src",
+    "lint": "eslint --ext .astro src",
     "format": "prettier --write ."
   },
   "author": "Alireza Balouch",

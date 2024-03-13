@@ -5,7 +5,7 @@ title: 'Variables'
 
 # Variables
 
-Variables are like "drawers" we put stuff in.
+Variables are like *drawers* we put stuff in.
 
 ## let
 

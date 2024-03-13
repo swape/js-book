@@ -6,8 +6,8 @@ In this book I'll try to avoid teaching you those parts, so you can focus on wri
 
 Read this book [here](https://js-book.mjolnirmedia.now.sh/)
 
-This is going to be a book with multiple parts. 
+This is going to be a book with multiple parts.
 
 - Basics
-- Serverside (Node) **not finished yet**
+- Serverside (Node)
 - Browser **not finished yet**
