@@ -6,7 +6,7 @@ title: 'Getting Started'
 # Getting Started
 
 You can start by learning how to write HTML code and maybe CSS and then come back here to learn about JavaScript.
-In your test page add javascript tag and point to where that file is like this.
+In your test-page add `script` tag and point to where that file is located.
 
 ```html
 <script src="myfile.js"></script>
