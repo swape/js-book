@@ -121,3 +121,60 @@ let myArr2 = [4, 5, 6]
 let myArr3 = [...myArr, ...myArr2]
 console.log(myArr3) // this outputs [ 1, 2, 3, 4, 5, 6 ]
 ```
+
+## Sort
+
+You can sort the array with sort function, but it is some caveats.
+
+Javascript sort numbers as it was a textual and some letters might not sort in right place.
+
+```javascript
+// Wrong way of sorting numbers
+
+let myArr = [1, 20, 3, 11, 12, 2].sort()
+console.log(myArr) // this outputs [ 1, 11, 12, 2, 20, 3 ]
+```
+Instead, we can make our own comparing method to do this in a right way.
+
+```javascript
+function compareNumbers(a, b) {
+  return a - b;
+}
+
+let myArr = [1, 20, 3, 11, 12, 2].sort(compareNumbers)
+
+console.log(myArr) // this outputs [ 1, 2, 3, 11, 12, 20 ]
+```
+
+And to make this descending, we can use the method `reverse()`
+
+```javascript
+function compareNumbers(a, b) {
+  return a - b;
+}
+
+let myArr = [1, 20, 3, 11, 12, 2].sort(compareNumbers).reverse()
+
+console.log(myArr) // this outputs [ 20, 12, 11, 3, 2, 1 ]
+```
+
+Let's try to add mix some strings in there to see the danger of sorting with mixed values.
+
+```javascript
+
+function compareNumbers(a, b) {
+  return a - b;
+}
+
+let myArr = ['0', 'something 1', 'something 2' ,'5' , 1, 20, 3, 11, 12, 'x', 'a', 2 ,0].sort(compareNumbers)
+
+console.log(myArr) // this outputs [ '0', 'something 1', 'something 2', 0, 1, 2, 3, '5', 11, 12, 20, 'x', 'a' ]
+```
+Now this is confusing stuff there.
+
+You can read more about the sort function here [Sort on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+In this case you have to first figure out how you want it sorted and use our compareNumbers
+function to sort in the right way. 
+Or just filter out non-numeric values from the array first. 
+You can use the filter method (explained in chapter 2) to do this.
