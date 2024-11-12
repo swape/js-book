@@ -47,24 +47,25 @@ const title = frontmatter?.title || 'JS'
       </section>
     </main>
     <script>
-      const $$ = (q) => document.querySelector(q)
-      const menu = $$('.menu-container')
-      const backdrop = $$('.backdrop')
+      const querySelector = (q) => document.querySelector(q)
+      const menu = querySelector('.menu-container')
+      const backdrop = querySelector('.backdrop')
+
       function toggle() {
         menu.classList.toggle('closed')
         backdrop.classList.toggle('closed')
       }
-      $$('.burger').addEventListener('click', toggle)
-      $$('.close-button').addEventListener('click', toggle)
+      querySelector('.burger').addEventListener('click', toggle)
+      querySelector('.close-button').addEventListener('click', toggle)
       backdrop.addEventListener('click', toggle)
 
       const { location } = window
       const url = location.href.split('#')[0].replace(location.origin, '')
-      const activeLink = $$('.menu-container a[href="' + url + '"]')
-      if(activeLink) {
+      const activeLink = querySelector('.menu-container a[href="' + url + '"]')
+
+      if (activeLink) {
         activeLink.classList.add('active')
       }
-
     </script>
   </body>
 </html>

@@ -9,10 +9,7 @@ const chapter = '1'
     {
       menuList.map((items) => (
         <li class={'level-' + items.depth}>
-          <a
-            class="hover:text-blue-600"
-            href={`${items.url}${items.depth > 1 ? '#' + items.slug : ''}`}
-          >
+          <a class="hover:text-blue-600" href={`${items.url}${items.depth > 1 ? '#' + items.slug : ''}`}>
             {items.text}
           </a>
         </li>
