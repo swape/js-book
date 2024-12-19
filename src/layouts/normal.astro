@@ -6,7 +6,8 @@ import Footer from '../components/Footer/index.astro'
 import '../styles.css'
 
 import { FilteredData, GlobType } from '../types'
-let pages = await Astro.glob('../pages/chapter*/*.md')
+let pagesMatch =  import.meta.glob('../pages/chapter*/*.md', { eager: true })
+let pages = Object.values(pagesMatch)
 
 function filterData(data: GlobType[]): FilteredData[] {
   const retData = []
