@@ -13,10 +13,7 @@ function findPrevAndNext(list: FilteredData[], path: string) {
         current.next = item
       }
 
-      if (
-        item.url.replaceAll('/', '') === path.replaceAll('/', '') &&
-        current.prev === null
-      ) {
+      if (item.url.replaceAll('/', '') === path.replaceAll('/', '') && current.prev === null) {
         current.prev = prev
       }
       prev = item
@@ -52,6 +49,8 @@ const { prev, next } = findPrevAndNext(menuList, Astro.url.pathname)
 </footer>
 
 <style>
+  @reference '../../styles.css';
+
   footer {
     @apply pt-10 flex justify-between;
   }

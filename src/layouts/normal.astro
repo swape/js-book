@@ -5,9 +5,9 @@ import Footer from '../components/Footer/index.astro'
 
 import '../styles.css'
 
-import { FilteredData, GlobType } from '../types'
-let pagesMatch =  import.meta.glob('../pages/chapter*/*.md', { eager: true })
-let pages = Object.values(pagesMatch)
+import type { FilteredData, GlobType } from '../types'
+const pagesMatch = import.meta.glob('../pages/chapter*/*.md', { eager: true })
+const pages = Object.values(pagesMatch)
 
 function filterData(data: GlobType[]): FilteredData[] {
   const retData = []
@@ -36,6 +36,7 @@ const title = frontmatter?.title || 'JS'
     <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Java script book for the brave aliens." />
+    <meta charset="utf-8" />
   </head>
   <body>
     <nav><TopBar /></nav>
