@@ -47,7 +47,7 @@ const myFunc = function () {
 
 ## Arrow Function
 
-Arrow functions are a part of the "new" ES6 JavaScript.
+Arrow functions are a part of the **new** ES6 JavaScript.
 
 ```javascript
 const myFunc = () => {

@@ -7,7 +7,7 @@ title: 'Boolean'
 
 On or off, true or false.
 
-In `JavaScript, we can make true or false values in many ways. Let us use some of them here.
+In JavaScript, we can make true or false values in many ways. Let us use some of them here.
 
 ```javascript
 let isAdmin = true
@@ -51,7 +51,7 @@ if (!answer) {
 }
 ```
 
-When you work with `if` statement, you have to be careful not to be confused by "Falsy" values.
+When you work with `if` statement, you have to be careful not to be confused by **Falsy** values.
 
 ```javascript
 if ('') {

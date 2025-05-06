@@ -51,7 +51,7 @@ console.log(myFunc('John', 'Greetings'))
 ```
 
 This should log Greetings John in console.
-If you don't pass the second argument "Greetings" at all, you should get undefined John.
+If you don't pass the second argument **Greetings** at all, you should get undefined John.
 This happens when JavaScript can not find that value. Instead, it is setting the keyword `undefined` for that variable.
 
 Functions can access variables outside the scope but variables declared inside the function is only accessible within that function. Let us try one.

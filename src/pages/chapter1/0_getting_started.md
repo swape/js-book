@@ -20,7 +20,7 @@ alert('Hello world')
 
 If you see an alert when you refresh, then you are doing it right.
 
-In this book we are following the best practices and standards. You might see some other way of doing things in other books or elsewhere on the internet. I'm trying to avoid bad parts and awful practices.
+In this book we are following the best practices and standards. You might see some other way of doing things in other books or elsewhere on the internet. I am trying to avoid bad parts and awful practices.
 
 In this book we are focusing on new browsers and not coding for old browsers. It helps if you use and know how to use the Google Chrome JavaScript Console.
 

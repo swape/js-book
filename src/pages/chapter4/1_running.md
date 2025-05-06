@@ -18,7 +18,7 @@ This is how the project structure should look like:
   package.json
 ```
 
-Open up the package.json file and at the scripts object, add a new command called "start".
+Open up the package.json file and at the scripts object, add a new command called **start**.
 
 ```json
 {
@@ -43,4 +43,4 @@ console.log('Hello World')
 Now you can run the project by typing `npm start` in your terminal.
 Make sure you are in the root of your project when you run the command.
 
-You should see the text "Hello World" in your terminal.
+You should see the text **Hello World** in your terminal.

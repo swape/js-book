@@ -49,7 +49,7 @@ for (v of myArr) {
 
 In here we assign `v` to each element of `myArr` array and loop though it.
 This is easier than the first one. There is another type of for loop where you use `in` instead of `of`.
-But "for of" is better since it iterate over arrays in right order.
+But **for of** is better since it iterate over arrays in right order.
 
 ## While loop
 

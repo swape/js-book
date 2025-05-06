@@ -45,7 +45,7 @@ this is running after 'then' and 'catch'
 
 ## then (resolve)
 
-As you can se we pass a function to our `Promise`. This function have 2 argument functions. "resolve" and "reject".
+As you can se we pass a function to our `Promise`. This function have 2 argument functions. **resolve** and **reject**.
 
 When we use `resolve('some data')`, we can get that data with `.then()` function on our `fetchMyData` object.
 

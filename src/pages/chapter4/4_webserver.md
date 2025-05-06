@@ -42,9 +42,9 @@ Now go back to terminal and type the following command:
 npm start
 ```
 
-You should see the text "Server is running on http://localhost:3000" in your terminal. If you get some error, make sure you have installed `express` with npm and you have the `index.js` file in the root of your project. Make sure you have the `start` command in your `package.json` file.
+You should see the text `Server is running on http://localhost:3000` in your terminal. If you get some error, make sure you have installed `express` with npm and you have the `index.js` file in the root of your project. Make sure you have the `start` command in your `package.json` file.
 
-Now open up your browser and go to `http://localhost:3000`. You should see the text "Hello World" in your browser.
+Now open up your browser and go to `http://localhost:3000`. You should see the text **Hello World** in your browser.
 
 Congratulations! You have created your first webserver with Node.js and Express.
 

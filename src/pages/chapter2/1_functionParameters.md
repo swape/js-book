@@ -26,7 +26,7 @@ On line 5 there are no parameters, and it uses the default values as we set it t
 
 And on line 7 we have both parameters.
 
-If we don't give it a default value it returns `"undefined"` as value for that parameter.
+If we don't give it a default value it returns `undefined` as value for that parameter.
 
 If you get confused on the arrow function, here is the same function in other forms.
 

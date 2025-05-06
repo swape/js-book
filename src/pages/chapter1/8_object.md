@@ -23,7 +23,7 @@ console.log(myObj2.name) // This outputs 'Bob'
 
 You can access the objects properties with dot notation.
 
-If you want to get the value of the property "age" from `myObj2` in example above, you can get it like this: `myObj2.age`.
+If you want to get the value of the property **age** from `myObj2` in example above, you can get it like this: `myObj2.age`.
 
 Properties `name`, `age` and `level` is the keys you can access their values from and these must be unique.
 So you can't have duplicates.
@@ -61,7 +61,7 @@ myObj.sayHi() // Outputs 'Hi there KVN'
 At line 4, I'm getting the value of `name` by using `this.name`. In here `this` refers to the parent object `myObj`.
 There are some cases this refers to completely other objects if you use it without understanding where you call this from.
 
-To avoid issues with `this`, you can use this string `'use strict'` at top of your script or inside your function to tell the browser that it should follow the "strict mode" that was introduced in version 5 of JavaScript/ECMAScript.
+To avoid issues with `this`, you can use this string `'use strict'` at top of your script or inside your function to tell the browser that it should follow the **strict mode** that was introduced in version 5 of JavaScript/ECMAScript.
 
 <div class="tip">
 JavaScript is sometimes called ECMAScript. You can <a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank" rel="noreferrer noopener" >read more about it here</a>.

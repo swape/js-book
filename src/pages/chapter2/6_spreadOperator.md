@@ -53,7 +53,7 @@ const arr2 = [3, 4, 5]
 const arr3 = arr1.concat(arr2)
 ```
 
-You can use spread syntax to do some "destructuring".
+You can use spread syntax to do some **destructuring**.
 
 ```javascript
 const [head, ...tail] = [1, 2, 3, 4]
