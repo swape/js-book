@@ -14,12 +14,12 @@
   "author": "Alireza Balouch",
   "license": "ISC",
   "devDependencies": {
-    "astro": "^5.16.10",
-    "prettier": "^3.8.0",
+    "astro": "^5.18.0",
+    "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "tailwindcss": "^4.1.18"
+    "@tailwindcss/vite": "^4.2.1",
+    "tailwindcss": "^4.2.1"
   }
 }
