@@ -16,7 +16,7 @@ Let us start by installing `express` with npm.
 Open up the terminal and type the following command:
 
 ```bash
-npm install -D express
+npm install express
 ```
 
 Now open up the `index.js` file and write some code.
