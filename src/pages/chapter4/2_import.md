@@ -9,6 +9,22 @@ In your project you might want to split your code into multiple files.
 
 This is a good practice to keep your code clean and easy to read.
 
+## Enable ES module imports in Node.js
+
+Before you can use the `import` syntax in Node.js, you need to tell Node that your project uses ES modules. Open your `package.json` file and add `"type": "module"`:
+
+```json
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "type": "module"
+}
+```
+
+Without this line, Node.js will treat your files as CommonJS and throw a `SyntaxError` when it sees `import`.
+
+## Importing functions from another file
+
 Lets make another file called `utils.js` and write some code.
 
 ```javascript
