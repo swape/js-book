@@ -67,15 +67,15 @@ try {
 
 ```javascript
 const err = new Error('Something broke')
-console.log(err.name)    // 'Error'
+console.log(err.name) // 'Error'
 console.log(err.message) // 'Something broke'
 ```
 
 JavaScript also has built-in error types for specific situations:
 
 ```javascript
-throw new TypeError('Expected a string')      // wrong type
-throw new RangeError('Value out of range')    // value outside allowed range
+throw new TypeError('Expected a string') // wrong type
+throw new RangeError('Value out of range') // value outside allowed range
 throw new ReferenceError('Variable not found') // accessing undefined variable
 ```
 

@@ -176,13 +176,12 @@ But we can do better:
 
 ```javascript
 const fetchData = (id) =>
-  fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Request failed with status ${response.status}`)
-      }
-      return response.json()
-    })
+  fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then((response) => {
+    if (!response.ok) {
+      throw new Error(`Request failed with status ${response.status}`)
+    }
+    return response.json()
+  })
 
 fetchData(1).then(console.log).catch(console.log)
 ```

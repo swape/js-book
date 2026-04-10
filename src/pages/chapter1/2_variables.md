@@ -5,7 +5,7 @@ title: 'Variables'
 
 # Variables
 
-Variables are like *drawers* we put stuff in.
+Variables are like _drawers_ we put stuff in.
 
 ## let
 
@@ -73,13 +73,13 @@ myName = 'Bob' // TypeError: Assignment to constant variable.
 **Best practice:** use `const` by default. Only switch to `let` when you know the variable needs to be reassigned later. This makes your code easier to read because anyone who sees `const` immediately knows the value will not change.
 
 ```javascript
-const PI = 3.14          // never changes — use const
+const PI = 3.14 // never changes — use const
 const greeting = 'Hello' // never changes — use const
 
-let score = 0            // will be updated — use let
+let score = 0 // will be updated — use let
 score = score + 10
 
-let userInput = ''       // will be overwritten — use let
+let userInput = '' // will be overwritten — use let
 userInput = 'Alice'
 ```
 

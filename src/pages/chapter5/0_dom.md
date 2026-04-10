@@ -14,9 +14,9 @@ The **DOM** (Document Object Model) is a tree of all the HTML elements on the pa
 `querySelector` returns the first element that matches a CSS selector.
 
 ```javascript
-const button = document.querySelector('#submit')       // by id
-const heading = document.querySelector('h1')           // by tag
-const card = document.querySelector('.card')           // by class
+const button = document.querySelector('#submit') // by id
+const heading = document.querySelector('h1') // by tag
+const card = document.querySelector('.card') // by class
 ```
 
 ## querySelectorAll

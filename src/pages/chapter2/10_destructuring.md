@@ -21,9 +21,9 @@ const second = colors[1]
 // with destructuring
 const [first, second, third] = colors
 
-console.log(first)  // 'red'
+console.log(first) // 'red'
 console.log(second) // 'green'
-console.log(third)  // 'blue'
+console.log(third) // 'blue'
 ```
 
 You can skip elements using an empty comma:
@@ -61,7 +61,7 @@ const age = user.age
 const { name, age } = user
 
 console.log(name) // 'Alice'
-console.log(age)  // 30
+console.log(age) // 30
 ```
 
 ## Renaming variables
@@ -72,7 +72,7 @@ If the property name clashes with something in scope, you can rename it:
 const { name: userName, age: userAge } = user
 
 console.log(userName) // 'Alice'
-console.log(userAge)  // 30
+console.log(userAge) // 30
 ```
 
 ## Default values

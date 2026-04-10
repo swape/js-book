@@ -56,7 +56,7 @@ counter() // 2
 counter() // 3
 ```
 
-`makeCounter` returns a new function. That inner function still has access to `count`, even though `makeCounter` already finished. The inner function has *closed over* the `count` variable — that is what a closure is.
+`makeCounter` returns a new function. That inner function still has access to `count`, even though `makeCounter` already finished. The inner function has _closed over_ the `count` variable — that is what a closure is.
 
 Each call to `makeCounter()` creates its own independent `count`:
 

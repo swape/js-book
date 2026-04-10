@@ -42,7 +42,9 @@ Wrap your `await` calls in a `try / catch` block to handle errors:
 ```javascript
 async function loadUser(id) {
   try {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+    const response = await fetch(
+      `https://jsonplaceholder.typicode.com/users/${id}`
+    )
     if (!response.ok) {
       throw new Error(`Request failed: ${response.status}`)
     }

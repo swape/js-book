@@ -23,16 +23,16 @@ import path from 'path'
 
 const full = '/Users/alice/projects/app/src/index.js'
 
-console.log(path.basename(full))          // 'index.js'
-console.log(path.dirname(full))           // '/Users/alice/projects/app/src'
-console.log(path.extname(full))           // '.js'
+console.log(path.basename(full)) // 'index.js'
+console.log(path.dirname(full)) // '/Users/alice/projects/app/src'
+console.log(path.extname(full)) // '.js'
 console.log(path.join('src', 'utils.js')) // 'src/utils.js'
 console.log(path.resolve('src', 'utils.js')) // absolute path based on cwd
 ```
 
 `path.join` builds a path from parts. `path.resolve` does the same but always returns an absolute path starting from the current working directory.
 
-## __dirname with ES Modules
+## \_\_dirname with ES Modules
 
 In CommonJS, `__dirname` gives you the directory of the current file. In ES Modules it does not exist, but you can recreate it:
 
@@ -102,7 +102,7 @@ Load it at the top of your entry file:
 ```javascript
 import 'dotenv/config'
 
-console.log(process.env.PORT)        // '4000'
+console.log(process.env.PORT) // '4000'
 console.log(process.env.DATABASE_URL) // 'postgres://localhost/mydb'
 ```
 

@@ -79,11 +79,11 @@ Now this is more readable code with comments in the code.
 - `Number(value)` — converts to a number; returns `NaN` if it can't convert
 
 ```javascript
-console.log(parseInt('42.9'))   // 42    (decimal stripped)
+console.log(parseInt('42.9')) // 42    (decimal stripped)
 console.log(parseFloat('42.9')) // 42.9  (decimal kept)
-console.log(Number('42.9'))     // 42.9
-console.log(Number(''))         // 0
-console.log(Number('hello'))    // NaN
+console.log(Number('42.9')) // 42.9
+console.log(Number('')) // 0
+console.log(Number('hello')) // NaN
 ```
 
 It is preferred to use `Number()` when you want to convert to a number because it is more strict and it does not do any weird conversion. It either converts to a number or returns `NaN` if it can't convert. `parseInt` and `parseFloat` can lead to silent bugs if you are not careful.
@@ -91,14 +91,14 @@ It is preferred to use `Number()` when you want to convert to a number because i
 Let's say you want to convert a string with number or some text to a number.
 
 ```javascript
-console.log(parseInt('42px'))  // 42    (stops parsing at 'p')
-console.log(Number('42px'))    // NaN   (can't convert)
+console.log(parseInt('42px')) // 42    (stops parsing at 'p')
+console.log(Number('42px')) // NaN   (can't convert)
 ```
 
 You could also use `Number.parseInt` and `Number.parseFloat` which are the same as the global `parseInt` and `parseFloat` but they are namespaced under `Number`.
 
 ```javascript
-console.log(Number.parseInt('42.9'))   // 42
+console.log(Number.parseInt('42.9')) // 42
 console.log(Number.parseFloat('42.9')) // 42.9
 ```
 
@@ -107,9 +107,9 @@ console.log(Number.parseFloat('42.9')) // 42.9
 You can check what type a variable is with `typeof`:
 
 ```javascript
-console.log(typeof 42)        // 'number'
-console.log(typeof 'hello')   // 'string'
-console.log(typeof true)      // 'boolean'
+console.log(typeof 42) // 'number'
+console.log(typeof 'hello') // 'string'
+console.log(typeof true) // 'boolean'
 console.log(typeof undefined) // 'undefined'
 ```
 
@@ -120,9 +120,9 @@ This is useful when you don't know what kind of data you are receiving.
 `NaN` means **Not a Number**. It shows up when a conversion fails. You can check for it with `isNaN()`:
 
 ```javascript
-console.log(isNaN('hello'))  // true  — can't convert 'hello' to a number
-console.log(isNaN('42'))     // false — '42' can be converted to 42
-console.log(isNaN(42))       // false — already a number
+console.log(isNaN('hello')) // true  — can't convert 'hello' to a number
+console.log(isNaN('42')) // false — '42' can be converted to 42
+console.log(isNaN(42)) // false — already a number
 ```
 
 Always check for `NaN` before using a converted value in math to avoid silent bugs.

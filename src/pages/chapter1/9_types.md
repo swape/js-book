@@ -12,15 +12,15 @@ JavaScript has several built-in types. Knowing what type a value is helps you av
 You can check the type of any value with the `typeof` operator:
 
 ```javascript
-console.log(typeof 42)          // 'number'
-console.log(typeof 3.14)        // 'number'
-console.log(typeof 'hello')     // 'string'
-console.log(typeof true)        // 'boolean'
-console.log(typeof undefined)   // 'undefined'
-console.log(typeof null)        // 'object'  ← a known quirk in JavaScript
-console.log(typeof {})          // 'object'
-console.log(typeof [])          // 'object'
-console.log(typeof function(){}) // 'function'
+console.log(typeof 42) // 'number'
+console.log(typeof 3.14) // 'number'
+console.log(typeof 'hello') // 'string'
+console.log(typeof true) // 'boolean'
+console.log(typeof undefined) // 'undefined'
+console.log(typeof null) // 'object'  ← a known quirk in JavaScript
+console.log(typeof {}) // 'object'
+console.log(typeof []) // 'object'
+console.log(typeof function () {}) // 'function'
 ```
 
 `typeof` returns a string. Notice that `typeof null` returns `'object'` — this is a long-standing quirk in JavaScript, not a real object.
@@ -45,7 +45,7 @@ let user = null // no user yet
 Quick comparison:
 
 ```javascript
-console.log(null == undefined)  // true  (loose equality ignores the type difference)
+console.log(null == undefined) // true  (loose equality ignores the type difference)
 console.log(null === undefined) // false (strict equality — different types)
 ```
 

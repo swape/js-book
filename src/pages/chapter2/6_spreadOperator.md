@@ -33,7 +33,7 @@ const sum = (...values) => {
   return output
 }
 
-const val1 = sum(1, 2)       // 3
+const val1 = sum(1, 2) // 3
 const val2 = sum(1, 2, 3, 4, 5) // 15
 ```
 
@@ -86,7 +86,7 @@ const myObj = {
 
 const { x, ...others } = myObj
 
-console.log(x)      // 'some other things'
+console.log(x) // 'some other things'
 console.log(others) // { a: 1, b: 2, c: 3, hello: 'some text here' }
 ```
 
@@ -95,5 +95,6 @@ Now the `x` variable contains value of `x` from `myObj` and `others` contains th
 This is a good trick to omit some variables from other objects. `others` variable have a copy of all the elements from `myObj` except the `x` variable.
 
 **Summary:**
+
 - `...args` in function parameters → **rest parameter** (collects arguments into an array)
 - `...arr` in array/object literals or calls → **spread syntax** (expands an array/object)

@@ -20,13 +20,13 @@ const user = {
 }
 
 // Without optional chaining — crashes if address is missing
-console.log(user.address.city)         // 'Oslo'
-console.log(user.address.zipCode)      // undefined (no crash, key just doesn't exist)
-console.log(user.profile.avatar)       // TypeError: Cannot read properties of undefined
+console.log(user.address.city) // 'Oslo'
+console.log(user.address.zipCode) // undefined (no crash, key just doesn't exist)
+console.log(user.profile.avatar) // TypeError: Cannot read properties of undefined
 
 // With optional chaining — safe
-console.log(user?.address?.city)       // 'Oslo'
-console.log(user?.profile?.avatar)     // undefined (no crash)
+console.log(user?.address?.city) // 'Oslo'
+console.log(user?.profile?.avatar) // undefined (no crash)
 ```
 
 You can also use it for optional method calls:
@@ -51,8 +51,8 @@ const name = null
 console.log(name ?? 'Anonymous') // 'Anonymous'
 
 const count = 0
-console.log(count ?? 10)         // 0   — 0 is not null/undefined
-console.log(count || 10)         // 10  — 0 is falsy, so || falls through
+console.log(count ?? 10) // 0   — 0 is not null/undefined
+console.log(count || 10) // 10  — 0 is falsy, so || falls through
 ```
 
 Use `??` when `0`, `false`, or `''` are valid values you want to keep, and you only want to provide a fallback for `null` and `undefined`.
