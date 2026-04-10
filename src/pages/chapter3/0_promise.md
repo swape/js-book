@@ -175,28 +175,19 @@ Now we can re-use this function with different id's.
 But we can do better:
 
 ```javascript
-const fetchData = (id) => {
-  return new Promise((resolve, reject) => {
-    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
-      .then((data) => {
-        if (data) {
-          try {
-            const jsonData = data.json()
-            return resolve(jsonData)
-          } catch (e) {
-            return reject(e)
-          }
-        }
-        return reject(new Error('Error'))
-      })
-      .catch((e) => {
-        return reject(e)
-      })
-  })
-}
+const fetchData = (id) =>
+  fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`)
+      }
+      return response.json()
+    })
 
 fetchData(1).then(console.log).catch(console.log)
 ```
+
+`fetch` already returns a Promise, so you just chain `.then()` and `.catch()` directly on it. Wrapping `fetch` inside `new Promise(...)` is an anti-pattern called the **Promise constructor anti-pattern** — it adds unnecessary nesting and can swallow errors.
 
 Now we have made a function that fetch and return json or an error.
 
