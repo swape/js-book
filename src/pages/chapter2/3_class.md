@@ -190,3 +190,22 @@ class Dog extends Animal {
   }
 }
 ```
+
+## Private Elements
+
+You can declare private elements in class declaration. This means that you can not access those elements outside the class.
+
+```javascript
+class Person {
+  #name
+  constructor(name) {
+    this.#name = name
+  }
+  getName() {
+    return this.#name
+  }
+}
+```
+
+In this example we declare a private variable `#name` and we can not access it outside the class like this: `person.#name`.
+But we can access it with the `getName` function that we declared in the class. In this way we can control how the private variable is accessed and modified.
