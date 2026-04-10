@@ -5,6 +5,39 @@ title: 'Modules'
 
 # Modules
 
+## CommonJS vs ES Modules
+
+Node.js has two module systems, and you will see both in the wild.
+
+**CommonJS (CJS)** is the older system. It uses `require()` to import and `module.exports` to export.
+
+```javascript
+// utils.js  (CommonJS)
+const add = (a, b) => a + b
+module.exports = { add }
+
+// index.js  (CommonJS)
+const { add } = require('./utils.js')
+console.log(add(1, 2)) // 3
+```
+
+**ES Modules (ESM)** is the modern standard. It uses `import` and `export`. This is what this book uses throughout.
+
+```javascript
+// utils.js  (ES Modules)
+export const add = (a, b) => a + b
+
+// index.js  (ES Modules)
+import { add } from './utils.js'
+console.log(add(1, 2)) // 3
+```
+
+To use ES Modules in Node.js you must have `"type": "module"` in your `package.json` (see the Import chapter). Without it, Node treats your files as CommonJS and `import` will throw an error.
+
+When browsing older tutorials or third-party packages you will often see `require`. Both systems work, but prefer `import`/`export` in new projects.
+
+---
+
 There are some built-in modules in Node.js that you can use.
 
 Let's take a look at some of them.
