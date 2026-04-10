@@ -88,7 +88,7 @@ console.log(myObj.name) // Outputs 'Rob'
 myObj.name = 'Stark' // Change the name value
 console.log(myObj.name) // Outputs 'Stark'
 
-// TODO: name of the keys in "" and []
+// You can also access keys using bracket notation: myObj['name']
 ```
 
 You can also use space or other signs as a key, but you have to use quote sign `'` around the key.
