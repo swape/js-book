@@ -1,17 +1,23 @@
 ---
-const { menuList } = Astro.props
-const chapter = '1'
+interface Props {
+  menuList: {
+    text: string
+    url: string
+    slug: string
+    depth: number
+  }[]
+}
+
+const { menuList }: Props = Astro.props
 ---
 
 <div class="menu-container open closed">
   <button class="close-button">x</button>
-  <menu class="pt-5 pl-2">
+  <menu class="menu pt-5 pl-2 pr-4 pb-30 overflow-x-scroll max-h-svh">
     {
       menuList.map((items) => (
         <li class={'level-' + items.depth}>
-          <a class="hover:text-blue-600" href={`${items.url}${items.depth > 1 ? '#' + items.slug : ''}`}>
-            {items.text}
-          </a>
+          <a href={`${items.url}${items.depth > 1 ? '#' + items.slug : ''}`}>{items.text}</a>
         </li>
       ))
     }
@@ -21,19 +27,34 @@ const chapter = '1'
   @reference '../../styles.css';
 
   .menu-container {
-    min-width: 245px;
-    @apply pb-10;
+    min-width: clamp(200px, 23vw, 330px);
+    .menu {
+      @media (min-width: 1125px) {
+        position: fixed;
+        left: 0;
+        top: 50px;
+        bottom: 0;
+      }
+    }
   }
 
   .level-1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     margin-bottom: 8px;
+    top: -20px;
+    position: sticky;
+    background-color: rgb(195, 209, 239);
     @apply py-1 px-2;
   }
 
   .level-1:has(> a.active) {
-    background-color: rgb(0 0 0 /0.05);
+    background-color: black;
+    color: white;
+    &:hover {
+      background-color: black;
+      color: bisque;
+    }
   }
 
   .level-2 {
@@ -51,13 +72,21 @@ const chapter = '1'
     }
 
     .closed {
-      transform: translateX(-250px);
+      transform: translateX(-330px);
     }
 
     .close-button {
-      height: 52px;
-      width: 52px;
-      @apply block bg-slate-900 text-slate-50 absolute right-0 shadow-md opacity-70 hover:opacity-100;
+      height: 50px;
+      width: 50px;
+      left: 323px;
+      position: fixed;
+      display: block;
+      z-index: 30;
+      top: 0;
+      background-color: bisque;
+      border-radius: 30px;
+      corner-shape: squircle;
+      cursor: pointer;
     }
   }
 </style>
