@@ -65,4 +65,34 @@ It was very usual to use var instead of let before. But with the new JavaScript 
 
 The `const` keyword is like `let` and `var` but you can only assign a value to this only once. And if you try to override it later on in the script, it is going to complain about it.
 
-If you know that you are setting the value only once it is better to use `const`. But in most cases we just stick to `let`.
+```javascript
+const myName = 'Alice'
+myName = 'Bob' // TypeError: Assignment to constant variable.
+```
+
+**Best practice:** use `const` by default. Only switch to `let` when you know the variable needs to be reassigned later. This makes your code easier to read because anyone who sees `const` immediately knows the value will not change.
+
+```javascript
+const PI = 3.14          // never changes — use const
+const greeting = 'Hello' // never changes — use const
+
+let score = 0            // will be updated — use let
+score = score + 10
+
+let userInput = ''       // will be overwritten — use let
+userInput = 'Alice'
+```
+
+## Scope
+
+Variables declared with `let` and `const` are **block-scoped**, meaning they only exist inside the `{ }` block where they were created.
+
+```javascript
+if (true) {
+  let message = 'inside block'
+  console.log(message) // 'inside block'
+}
+console.log(message) // ReferenceError: message is not defined
+```
+
+`var` does not follow block scope, which is one of the main reasons it was replaced by `let` and `const`.
