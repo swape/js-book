@@ -101,7 +101,7 @@ let myObj = {
 // Getting the value from a key with space
 console.log(myObj['something here'])
 
-// Adding a new shitty key
+// Adding a new bad key
 myObj['💩'] = 5
 
 console.log(myObj['💩']) // Outputs 5
