@@ -42,7 +42,7 @@ There is another way to use the for loop.
 ```javascript
 const myArr = [5, 10, 15, 20]
 
-for (v of myArr) {
+for (const v of myArr) {
   console.log(v) // 5, 10, 15, 20
 }
 ```
