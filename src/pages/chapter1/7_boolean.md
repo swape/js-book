@@ -62,7 +62,7 @@ if (0) {
   // not going to run
 }
 
-if ('') {
+if (null) {
   // not going to run
 }
 ```
@@ -75,7 +75,7 @@ let b = !0 // true
 let c = ![] // false
 let d = !!0 // false
 let e = !'' // true
-let f = !'' // true
+let f = !undefined // true
 let g = !false // true
 let h = !true // false
 let i = 'false' // true
