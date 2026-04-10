@@ -7,10 +7,10 @@ import '../styles.css'
 
 import type { FilteredData, GlobType } from '../types'
 const pagesMatch = import.meta.glob('../pages/chapter*/*.md', { eager: true })
-const pages = Object.values(pagesMatch)
+const pages = Object.values(pagesMatch) as GlobType[]
 
 function filterData(data: GlobType[]): FilteredData[] {
-  const retData = []
+  const retData: FilteredData[] = []
 
   data.forEach((item) => {
     const url = item.url
@@ -49,7 +49,7 @@ const title = frontmatter?.title || 'JS'
       </section>
     </main>
     <script>
-      const querySelector = (q) => document.querySelector(q)
+      const querySelector = (q: string) => document.querySelector(q)!
       const menu = querySelector('.menu-container')
       const backdrop = querySelector('.backdrop')
 
