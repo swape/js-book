@@ -76,3 +76,29 @@ const myFunc2 = (name, age) => 'My name is ' + name + ' and my age is ' + age
 There are some differences between these 3 way of declaring the functions.
 
 I like to use the arrow function as much as I can when I bind them to an object, and I like the function declaration when is just alone.
+
+## Hoisting
+
+One important practical difference is **hoisting**. JavaScript moves function declarations to the top of the file before running your code, so you can call them before they appear in the source.
+
+```javascript
+// This works — function declaration is hoisted
+sayHello()
+
+function sayHello() {
+  console.log('Hello!')
+}
+```
+
+Function expressions and arrow functions are **not** hoisted. You must define them before calling them.
+
+```javascript
+// This throws an error — greet is not yet defined
+greet()
+
+const greet = () => {
+  console.log('Hello!')
+}
+```
+
+As a rule: if you use `const` or a function expression, always write the definition before the call.
